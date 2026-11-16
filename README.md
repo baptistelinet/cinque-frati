@@ -29,6 +29,10 @@ Les pages sont générées : modifier `sources/fr/<page>.html` ou `sources/en/<p
 3. Pour ajouter une photo produit : déposer `assets/img/produits/<slug>.jpg` (format 4:5) puis relancer le script.
 4. Pour illustrer un rayon de l'accueil : déposer `assets/img/rayons/<id-du-rayon>.jpg` (ex. `charcuterie.jpg`, format 3:4) puis relancer le script.
 
+## Images
+
+Rendus et photos générés dans Gemini (16/11/2026), redimensionnés depuis `/mnt/project-files/v2/images/rendus-gemini/` et `illustrations/gemini/`. Le pied de page le signale. Photos de rayon dans `assets/img/rayons/<id>.jpg`, photos produit dans `assets/img/produits/<slug>.jpg`.
+
 ## Pictogrammes et motifs
 
 - `assets/img/pictos.svg` : sprite des 25 pictogrammes (symboles `picto-NOM`). Usage : `<svg class="picto"><use href="assets/img/pictos.svg#picto-vins"/></svg>`. Couleur du trait via `color`, détail d'accent via `--picto-accent`, épaisseur via `--picto-trait`. Source : `/mnt/project-files/v2/images/pictos/`.

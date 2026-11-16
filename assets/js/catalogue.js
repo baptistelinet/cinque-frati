@@ -9,7 +9,7 @@ window.CATEGORIES = [
    "nom": "Charcuterie",
    "accroche": "Nustrale pork, chestnuts, mountain air. And time, lots of it."
   },
-  "image": ""
+  "image": "assets/img/rayons/charcuterie.jpg"
  },
  {
   "id": "fromages",
@@ -20,7 +20,7 @@ window.CATEGORIES = [
    "nom": "Cheeses",
    "accroche": "Raw ewe's and goat's milk. Strong characters."
   },
-  "image": ""
+  "image": "assets/img/rayons/fromages.jpg"
  },
  {
   "id": "vins-spiritueux",
@@ -31,7 +31,7 @@ window.CATEGORIES = [
    "nom": "Wines & spirits",
    "accroche": "Niellucciu, sciaccarellu, vermentinu. Grapes you'll only find here."
   },
-  "image": ""
+  "image": "assets/img/rayons/vins-spiritueux.jpg"
  },
  {
   "id": "huiles-miels-epicerie",
@@ -42,7 +42,7 @@ window.CATEGORIES = [
    "nom": "Oils, honeys & pantry",
    "accroche": "Olive, chestnut, honey: the three pillars of the Corsican pantry."
   },
-  "image": ""
+  "image": "assets/img/rayons/huiles-miels-epicerie.jpg"
  },
  {
   "id": "epices-herbes-du-maquis",
@@ -53,7 +53,7 @@ window.CATEGORIES = [
    "nom": "Spices & maquis herbs",
    "accroche": "The maquis in a jar. Hand-picked."
   },
-  "image": ""
+  "image": "assets/img/rayons/epices-herbes-du-maquis.jpg"
  },
  {
   "id": "douceurs",
@@ -64,7 +64,7 @@ window.CATEGORIES = [
    "nom": "Sweets",
    "accroche": "Canistrelli, fiadone, nougat. For coffee, or for no reason at all."
   },
-  "image": ""
+  "image": "assets/img/rayons/douceurs.jpg"
  },
  {
   "id": "box-coffrets",
@@ -75,7 +75,7 @@ window.CATEGORIES = [
    "nom": "Boxes & gift sets",
    "accroche": "Corsica, at home. Once, or every month."
   },
-  "image": ""
+  "image": "assets/img/rayons/box-coffrets.jpg"
  }
 ];
 window.CATALOGUE = [
@@ -115,7 +115,7 @@ window.CATALOGUE = [
   ],
   "vedette": false,
   "alcool": false,
-  "image": "assets/img/produits/coppa-di-corsica-aop.jpg",
+  "image": "",
   "en": {
    "nom": "Coppa di Corsica AOP",
    "unite": "100 g",
@@ -137,7 +137,7 @@ window.CATALOGUE = [
   ],
   "vedette": false,
   "alcool": false,
-  "image": "assets/img/produits/lonzu-aop.jpg",
+  "image": "",
   "en": {
    "nom": "Lonzu AOP",
    "unite": "100 g",
@@ -159,7 +159,7 @@ window.CATALOGUE = [
   ],
   "vedette": false,
   "alcool": false,
-  "image": "assets/img/produits/figatellu-de-calasima.jpg",
+  "image": "",
   "en": {
    "nom": "Figatellu from Calasima",
    "unite": "Piece, ~250 g",
@@ -262,7 +262,7 @@ window.CATALOGUE = [
   ],
   "vedette": true,
   "alcool": false,
-  "image": "",
+  "image": "assets/img/produits/trilogie-aop.jpg",
   "en": {
    "nom": "AOP trilogy",
    "unite": "150 g",
@@ -431,7 +431,7 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": false,
-  "image": "",
+  "image": "assets/img/produits/plateau-des-cinque-frati.jpg",
   "en": {
    "nom": "Cinque Frati cheese board",
    "unite": "~800 g",
@@ -451,7 +451,7 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": true,
   "alcool": true,
-  "image": "",
+  "image": "assets/img/produits/patrimonio-rouge-cinque-frati.jpg",
   "en": {
    "nom": "Patrimonio red “Cinque Frati”",
    "unite": "75 cl",
@@ -763,7 +763,7 @@ window.CATALOGUE = [
   ],
   "vedette": false,
   "alcool": false,
-  "image": "",
+  "image": "assets/img/produits/miel-aop-de-chataigneraie.jpg",
   "en": {
    "nom": "Chestnut grove honey AOP",
    "unite": "250 g",
@@ -830,7 +830,7 @@ window.CATALOGUE = [
   ],
   "vedette": false,
   "alcool": false,
-  "image": "",
+  "image": "assets/img/produits/farine-de-chataigne-aop.jpg",
   "en": {
    "nom": "Chestnut flour AOP",
    "unite": "500 g",
@@ -1130,7 +1130,7 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": false,
-  "image": "",
+  "image": "assets/img/produits/canistrelli-au-vin-blanc.jpg",
   "en": {
    "nom": "White wine canistrelli",
    "unite": "350 g",
@@ -1378,7 +1378,7 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": false,
-  "image": "",
+  "image": "assets/img/produits/box-mensuelle-a-scatula-abonnement.jpg",
   "en": {
    "nom": "“A Scatula” monthly box (subscription)",
    "unite": "",

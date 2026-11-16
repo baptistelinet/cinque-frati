@@ -67,7 +67,7 @@
         "<div><h4>" + L("Horaires", "Hours") + "</h4><p class=\"pied__ligne\">" + picto("horaires") + "<span>" + L("Mardi – samedi, 7 h – 19 h<br>Dimanche, 7 h – 13 h<br>Fermé le lundi", "Tuesday – Saturday, 7am – 7pm<br>Sunday, 7am – 1pm<br>Closed on Monday") + "</span></p>" + '<div class="pied__reseaux">' + [["instagram", "Instagram"], ["facebook", "Facebook"], ["tiktok", "TikTok"], ["pinterest", "Pinterest"]].map(function (r) { return '<a href="#" aria-label="' + r[1] + '" data-demo="' + L("Projet fictif : pas de compte réel", "Fictional project: no real account") + '">' + picto(r[0]) + "</a>"; }).join("") + "</div>" + "</div>" +
       "</div>" +
       '<p class="pied__geant" aria-hidden="true">Cinque Frati<span>.</span></p><p style="margin:18px 0 0;color:var(--creme)">Cinque Frati · ' + L("La Corse, à table.", "Corsica, at the table.") + "</p>" + '' +
-      '<div class="pied__bas"><span>© ' + new Date().getFullYear() + " Cinque Frati · " + L("Conception Baptiste Linet · Projet APD, avril 2025", "Design by Baptiste Linet · Detailed design project, April 2025") + "</span><span>" + MENTION_ALCOOL + "</span></div>" +
+      '<div class="pied__bas"><span>© ' + new Date().getFullYear() + " Cinque Frati · " + L("Conception Baptiste Linet · Projet APD, avril 2025 · Rendus et photos générés par IA (Gemini)", "Design by Baptiste Linet · Detailed design project, April 2025 · Renders and photos generated with AI (Gemini)") + "</span><span>" + MENTION_ALCOOL + "</span></div>" +
     "</div></footer>"
   ));
 
