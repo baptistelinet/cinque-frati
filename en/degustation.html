@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Taste · Cinque Frati</title>
+<meta name="description" content="The walk-in tasting counter, the premium lounge, workshops and the Cinque Frati Club, at Les Halles de Lyon Paul Bocuse.">
+<meta property="og:title" content="Taste · Cinque Frati">
+<meta property="og:description" content="The walk-in tasting counter, the premium lounge, workshops and the Cinque Frati Club, at Les Halles de Lyon Paul Bocuse.">
+<meta property="og:image" content="../assets/img/stand-halles.jpg">
+<meta name="theme-color" content="#c05839">
+<link rel="alternate" hreflang="fr" href="../degustation.html">
+<link rel="alternate" hreflang="en" href="degustation.html">
+<link rel="icon" href="../assets/img/logo.png">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link href="https://api.fontshare.com/v2/css?f[]=chillax@300,400,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="degustation">
+<main>
+  <section class="page-titre">
+    <div class="conteneur duo">
+      <div>
+        <span class="surtitre">Taste</span>
+        <h1>Taste before you buy</h1>
+        <p class="chapo">The counter is the heart of the shop. A board, a glass, and someone to tell you who made what, and in which village.</p>
+        <div class="boutons"><a class="bouton" href="#reserver">Book the lounge</a><a class="bouton bouton--ligne" href="#ateliers">See the workshops</a></div>
+      </div>
+      <img class="arche" src="../assets/img/degustation.jpg" alt="The tasting area, green banquettes and beech wood tables" style="object-position:30% 50%">
+    </div>
+  </section>
+
+  <section class="section section--pierre" id="comptoir">
+    <div class="conteneur duo" style="align-items:start">
+      <div>
+        <span class="surtitre">U bancone · no booking needed</span>
+        <h2>The counter menu</h2>
+        <p class="chapo">Served all day, during the opening hours of Les Halles. Grilled figatellu from December to March only.</p>
+        <p class="mention-alcool" style="border:0;padding:0">Alcohol abuse is dangerous for your health. Please drink responsibly.</p>
+      </div>
+      <ul class="menu" data-carte="carte-du-comptoir"></ul>
+    </div>
+  </section>
+
+  <section class="plein-cadre">
+    <img src="../assets/img/premium.jpg" alt="The premium lounge, large white banquette, wooden beams and natural plaster" loading="lazy">
+    <div class="conteneur">
+      <span class="surtitre">A sala · the premium lounge</span>
+      <h2>Eight to twelve guests,<br>one table, one island.</h2>
+      <p class="chapo">Guided tastings, producer evenings, private hire for a birthday or a seminar.</p>
+    </div>
+  </section>
+
+  <section class="section" id="ateliers">
+    <div class="conteneur duo" style="align-items:start">
+      <div>
+        <span class="surtitre">Premium lounge & workshops</span>
+        <h2>Workshops and events</h2>
+        <p class="chapo">By booking only, in the premium lounge. Every month, a producer comes over from Corsica to present their work.</p>
+        <a class="bouton" href="#reserver">Book</a>
+      </div>
+      <ul class="menu" data-carte="salon-premium-ateliers"></ul>
+    </div>
+  </section>
+
+  <section class="section section--sauge" id="club">
+    <div class="conteneur">
+      <span class="surtitre">The Cinque Frati Club</span>
+      <h2>Be the first to know when the figatellu arrives.</h2>
+      <div class="offres" style="margin-top:40px;color:var(--encre)">
+        <article class="offre"><span class="surtitre">Free</span><h3>The Club</h3><span class="prix">€0</span><ul><li>Loyalty card: €1 = 1 point, 100 points = €10 off</li><li>Our seasonal newsletter</li><li>First access to new arrivals</li></ul><a class="bouton bouton--ligne" href="#" data-demo="Demo sign-up: nothing is saved.">Sign up</a></article>
+        <article class="offre offre--mise-en-avant"><span class="surtitre" style="color:#fff">€89 per year</span><h3>U Fratellu</h3><span class="prix">10% off all year</span><ul><li>One free tasting every quarter</li><li>Early access: figatellu, rare cuvées</li><li>Small-group producer evenings</li></ul><a class="bouton" href="#" data-demo="Demo membership: nothing is charged.">Become a Fratellu</a></article>
+        <article class="offre"><span class="surtitre">Business</span><h3>Restaurants & companies</h3><span class="prix">On request</span><ul><li>A selection for restaurants and hotels</li><li>Personalised gift boxes from 20 units</li><li>Private lounge hire for seminars</li></ul><a class="bouton bouton--ligne" href="#reserver">Contact us</a></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reserver">
+    <div class="conteneur duo" style="align-items:start">
+      <div>
+        <span class="surtitre">Booking</span>
+        <h2>Book a table in the lounge</h2>
+        <p class="chapo">Tell us the experience, the date and the number of guests. We confirm within 24 hours.</p>
+        <p class="produit__unite">Demo form: no booking is recorded.</p>
+      </div>
+      <form class="formulaire" data-reservation>
+        <label class="plein">Experience
+          <select required>
+            <option>Guided tasting “The three AOPs”</option><option>“Island wines” tasting</option><option>Fiadone & canistrelli workshop</option><option>Cheese & honey pairing workshop</option><option>Producer evening</option><option>Immersive journey</option><option>Private lounge hire</option>
+          </select>
+        </label>
+        <label>Date<input type="date" required></label>
+        <label>Time<select><option>11am</option><option>3pm</option><option>6:30pm</option></select></label>
+        <label>Guests<input type="number" min="1" max="12" value="2" required></label>
+        <label>Email<input type="email" placeholder="you@example.com" required></label>
+        <label class="plein">A note for us<textarea rows="3" placeholder="Birthday, allergies, wishes…"></textarea></label>
+        <div class="plein"><button class="bouton" type="submit">Send request</button></div>
+      </form>
+    </div>
+  </section>
+</main>
+<script src="../assets/js/catalogue.js"></script>
+<script src="../assets/js/app.js"></script>
+<script>
+  document.querySelector("[data-reservation]").addEventListener("submit", function (e) {
+    e.preventDefault(); e.target.reset();
+    var t = document.querySelector(".toast"); t.textContent = "Thank you! Demo request: nothing was sent."; t.classList.add("visible");
+    setTimeout(function () { t.classList.remove("visible"); }, 2800);
+  });
+</script>
+</body>
+</html>

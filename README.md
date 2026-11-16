@@ -14,9 +14,15 @@ Site vitrine et boutique de démonstration de **Cinque Frati**, épicerie fine c
 | `maison.html` | Histoire, le nom, engagements |
 | `lieu.html` | L'architecture du stand : rendus, plan, zoning, matériaux |
 
+Version anglaise dans `en/` (mêmes pages), avec un sélecteur FR/EN dans l'en-tête.
+
+## Modifier les textes des pages
+
+Les pages sont générées : modifier `sources/fr/<page>.html` ou `sources/en/<page>.html` (et `sources/tete.html` pour l'en-tête HTML commun), puis lancer `python3 outils/construire_pages.py`.
+
 ## Mettre à jour le catalogue
 
-1. Modifier `donnees/catalogue.json`.
+1. Modifier `donnees/catalogue.json` (français) et `donnees/catalogue-en.json` (anglais, par référence `CF-xxx`).
 2. Lancer `python3 outils/generer_catalogue.py` (régénère `assets/js/catalogue.js`).
 3. Pour ajouter une photo produit : déposer `assets/img/produits/<slug>.jpg` puis relancer le script.
 

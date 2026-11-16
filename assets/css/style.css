@@ -381,3 +381,16 @@ dialog.fiche::backdrop { background: rgba(20, 17, 15, .55); }
   .entete__barre { height: 64px; }
   .marque span { font-size: 1.25rem; }
 }
+
+/* Sélecteur de langue */
+.langue { text-decoration: none; font-size: .8rem; font-weight: 500; letter-spacing: .08em; border: 1px solid var(--ligne); border-radius: 999px; padding: 8px 12px; line-height: 1; }
+.langue:hover { border-color: var(--encre); }
+.marque span { white-space: nowrap; }
+@media (max-width: 420px) {
+  .marque { gap: 8px; }
+  .marque img { width: 32px; height: 32px; }
+  .marque span { font-size: 1.1rem; }
+  .actions { gap: 6px; }
+  .langue { padding: 8px 10px; }
+  .bouton-panier { padding: 7px 10px; }
+}

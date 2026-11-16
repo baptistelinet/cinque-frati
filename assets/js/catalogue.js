@@ -4,43 +4,71 @@ window.CATEGORIES = [
   "id": "charcuterie",
   "nom": "Charcuterie",
   "nomCorse": "A salumeria",
-  "accroche": "Porc nustrale élevé en liberté, châtaignes et glands, séché à l'air des montagnes. La charcuterie corse ne se presse pas."
+  "accroche": "Porc nustrale élevé en liberté, châtaignes et glands, séché à l'air des montagnes. La charcuterie corse ne se presse pas.",
+  "en": {
+   "nom": "Charcuterie",
+   "accroche": "Free-range nustrale pork raised on chestnuts and acorns, air-dried in the mountains. Corsican charcuterie is never rushed."
+  }
  },
  {
   "id": "fromages",
   "nom": "Fromages",
   "nomCorse": "I casgi",
-  "accroche": "Lait cru de brebis et de chèvre, bergeries de montagne, caves naturelles. Des fromages qui ont du caractère, comme ceux qui les font."
+  "accroche": "Lait cru de brebis et de chèvre, bergeries de montagne, caves naturelles. Des fromages qui ont du caractère, comme ceux qui les font.",
+  "en": {
+   "nom": "Cheeses",
+   "accroche": "Raw ewe's and goat's milk, mountain sheepfolds, natural cellars. Cheeses with character, like the people who make them."
+  }
  },
  {
   "id": "vins-spiritueux",
   "nom": "Vins & spiritueux",
   "nomCorse": "I vini",
-  "accroche": "Neuf AOC, des cépages qu'on ne trouve nulle part ailleurs : niellucciu, sciaccarellu, vermentinu."
+  "accroche": "Neuf AOC, des cépages qu'on ne trouve nulle part ailleurs : niellucciu, sciaccarellu, vermentinu.",
+  "en": {
+   "nom": "Wines & spirits",
+   "accroche": "Nine appellations and grape varieties found nowhere else: niellucciu, sciaccarellu, vermentinu."
+  }
  },
  {
   "id": "huiles-miels-epicerie",
   "nom": "Huiles, miels & épicerie",
   "nomCorse": "A dispensa",
-  "accroche": "Olives tombées au filet, miels AOP de six saisons, châtaigne moulue à la meule : le garde-manger d'une maison corse."
+  "accroche": "Olives tombées au filet, miels AOP de six saisons, châtaigne moulue à la meule : le garde-manger d'une maison corse.",
+  "en": {
+   "nom": "Oils, honeys & pantry",
+   "accroche": "Olives gathered in nets, AOP honeys from six seasons, stone-ground chestnut flour: the pantry of a Corsican home."
+  }
  },
  {
   "id": "epices-herbes-du-maquis",
   "nom": "Épices & herbes du maquis",
   "nomCorse": "E erbe",
-  "accroche": "Le maquis se respire avant de se goûter : myrte, nepita, immortelle, cueillis à la main."
+  "accroche": "Le maquis se respire avant de se goûter : myrte, nepita, immortelle, cueillis à la main.",
+  "en": {
+   "nom": "Spices & maquis herbs",
+   "accroche": "The maquis is something you smell before you taste: myrtle, nepita, immortelle, all hand-picked."
+  }
  },
  {
   "id": "douceurs",
   "nom": "Douceurs",
   "nomCorse": "E cose dolce",
-  "accroche": "Canistrelli, fiadone du matin, nougat au miel : la Corse côté goûter."
+  "accroche": "Canistrelli, fiadone du matin, nougat au miel : la Corse côté goûter.",
+  "en": {
+   "nom": "Sweets",
+   "accroche": "Canistrelli, fiadone baked every morning, honey nougat: Corsica at teatime."
+  }
  },
  {
   "id": "box-coffrets",
   "nom": "Box & coffrets",
   "nomCorse": "E scatule",
-  "accroche": "À offrir ou à s'offrir. Livraison à vélo dans Lyon, offerte dès 60 €."
+  "accroche": "À offrir ou à s'offrir. Livraison à vélo dans Lyon, offerte dès 60 €.",
+  "en": {
+   "nom": "Boxes & gift sets",
+   "accroche": "To give or to keep. Bike delivery in Lyon, free from €60."
+  }
  }
 ];
 window.CATALOGUE = [
@@ -58,7 +86,13 @@ window.CATALOGUE = [
   ],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Prisuttu AOP, 30 months",
+   "unite": "100 g",
+   "prixTexte": "€14.50",
+   "description": "Dry-cured ham from nustrale pigs, aged 30 months in a Haute-Corse cellar. Melting fat, notes of hazelnut and undergrowth. Sliced to order."
+  }
  },
  {
   "id": "coppa-di-corsica-aop",
@@ -74,7 +108,13 @@ window.CATALOGUE = [
   ],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Coppa di Corsica AOP",
+   "unite": "100 g",
+   "prixTexte": "€8.90",
+   "description": "Rolled pork neck, dry-salted then cured for 6 months. Ruby-red meat, pepper and sweetness."
+  }
  },
  {
   "id": "lonzu-aop",
@@ -90,7 +130,13 @@ window.CATALOGUE = [
   ],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Lonzu AOP",
+   "unite": "100 g",
+   "prixTexte": "€9.50",
+   "description": "Whole loin coated in pepper and mild chilli, lean and fragrant. The most elegant of the three AOPs."
+  }
  },
  {
   "id": "figatellu-de-calasima",
@@ -106,7 +152,13 @@ window.CATALOGUE = [
   ],
   "vedette": true,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Figatellu from Calasima",
+   "unite": "Piece, ~250 g",
+   "prixTexte": "€9.00",
+   "description": "Liver sausage smoked over chestnut wood, to be grilled over a wood fire. December to March only."
+  }
  },
  {
   "id": "salamu-nustrale",
@@ -120,7 +172,13 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Nustrale salamu",
+   "unite": "Piece, ~300 g",
+   "prixTexte": "€16.00",
+   "description": "Nustrale pork sausage with red wine and garlic, cured for 4 months."
+  }
  },
  {
   "id": "panzetta-affinee",
@@ -134,7 +192,13 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Aged panzetta",
+   "unite": "100 g",
+   "prixTexte": "€5.90",
+   "description": "Rolled, peppered pork belly, sliced thin for aperitif or melted into a soup."
+  }
  },
  {
   "id": "salciccia-de-sanglier",
@@ -148,7 +212,13 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Wild boar salciccia",
+   "unite": "Piece, ~200 g",
+   "prixTexte": "€13.50",
+   "description": "Dry Corsican wild boar sausage with myrtle. Wild and intense."
+  }
  },
  {
   "id": "terrine-de-sanglier-a-la-myrte",
@@ -162,7 +232,13 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Wild boar terrine with myrtle",
+   "unite": "Jar, 180 g",
+   "prixTexte": "€9.80",
+   "description": "Artisan terrine of maquis wild boar and myrtle berries."
+  }
  },
  {
   "id": "trilogie-aop",
@@ -179,7 +255,13 @@ window.CATALOGUE = [
   ],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "AOP trilogy",
+   "unite": "150 g",
+   "prixTexte": "€17.50",
+   "description": "Prisuttu, coppa and lonzu, 50 g of each, sliced on waxed paper bearing our logo."
+  }
  },
  {
   "id": "brocciu-aop-frais",
@@ -196,7 +278,13 @@ window.CATALOGUE = [
   ],
   "vedette": true,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Fresh brocciu AOP",
+   "unite": "Basket, ~500 g",
+   "prixTexte": "€12.00",
+   "description": "Fresh whey cheese from ewe's milk, ladled into its mould. Mild, almost sweet. November to June."
+  }
  },
  {
   "id": "brocciu-passu",
@@ -212,7 +300,13 @@ window.CATALOGUE = [
   ],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Brocciu passu",
+   "unite": "~250 g",
+   "prixTexte": "€9.50",
+   "description": "Brocciu salted and aged for a month, firmer, for grating over pasta."
+  }
  },
  {
   "id": "tomme-de-brebis-du-niolu",
@@ -226,7 +320,13 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Niolu ewe's milk tomme",
+   "unite": "200 g",
+   "prixTexte": "€9.90",
+   "description": "Pressed cheese aged 6 months in a high-altitude sheepfold, Bergerie Santa Lucia. Notes of hay and hazelnut."
+  }
  },
  {
   "id": "niulincu-affine",
@@ -242,7 +342,13 @@ window.CATALOGUE = [
   ],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Aged Niulincu",
+   "unite": "Piece, ~400 g",
+   "prixTexte": "€15.50",
+   "description": "Washed-rind soft cheese from the Niolu valley, powerful and creamy. For connoisseurs."
+  }
  },
  {
   "id": "fleur-du-maquis",
@@ -258,7 +364,13 @@ window.CATALOGUE = [
   ],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Fleur du maquis",
+   "unite": "Piece, ~600 g",
+   "prixTexte": "€22.00",
+   "description": "Bloomy-rind ewe's cheese rolled in rosemary, savory and juniper berries."
+  }
  },
  {
   "id": "calinzanincu",
@@ -272,7 +384,13 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Calinzanincu",
+   "unite": "Piece, ~350 g",
+   "prixTexte": "€13.00",
+   "description": "Small ewe's and goat's milk cheese from Balagne, mild and milky."
+  }
  },
  {
   "id": "tomme-de-chevre-du-cap",
@@ -286,7 +404,13 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Cap Corse goat's tomme",
+   "unite": "200 g",
+   "prixTexte": "€8.90",
+   "description": "Pressed goat's cheese aged 4 months, with a saline finish."
+  }
  },
  {
   "id": "plateau-des-cinque-frati",
@@ -300,7 +424,13 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Cinque Frati cheese board",
+   "unite": "~800 g",
+   "prixTexte": "€49.00",
+   "description": "Five cheeses from five valleys, with fig jam and chestnut bread. Serves 4 to 6."
+  }
  },
  {
   "id": "patrimonio-rouge-cinque-frati",
@@ -314,7 +444,13 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": true,
   "alcool": true,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Patrimonio red “Cinque Frati”",
+   "unite": "75 cl",
+   "prixTexte": "€26.00",
+   "description": "Our house cuvée from Domaine di Funtanella. 100% niellucciu: black cherry, garrigue, silky tannins."
+  }
  },
  {
   "id": "ajaccio-rouge-granitu",
@@ -328,7 +464,13 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": true,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Ajaccio red “Granitu”",
+   "unite": "75 cl",
+   "prixTexte": "€29.00",
+   "description": "Sciaccarellu on granite, Domaine Monte Rossu. Light, peppery, very easy to drink."
+  }
  },
  {
   "id": "patrimonio-blanc-petra-bianca",
@@ -342,7 +484,13 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": true,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Patrimonio white “Petra Bianca”",
+   "unite": "75 cl",
+   "prixTexte": "€24.00",
+   "description": "Vermentinu on clay and limestone. Almond, citrus, salinity."
+  }
  },
  {
   "id": "corse-calvi-rose-alba",
@@ -356,7 +504,13 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": true,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Corse Calvi rosé “Alba”",
+   "unite": "75 cl",
+   "prixTexte": "€19.50",
+   "description": "Pale rosé from Balagne, sciaccarellu and grenache. White peach, freshness."
+  }
  },
  {
   "id": "corse-sartene-rouge-vechju",
@@ -372,7 +526,13 @@ window.CATALOGUE = [
   ],
   "vedette": false,
   "alcool": true,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Corse Sartène red “Vechju”",
+   "unite": "75 cl",
+   "prixTexte": "€48.00",
+   "description": "Top cuvée aged 18 months, old vines. Rare: 1,200 bottles."
+  }
  },
  {
   "id": "muscat-du-cap-corse-aoc",
@@ -388,7 +548,13 @@ window.CATALOGUE = [
   ],
   "vedette": false,
   "alcool": true,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Muscat du Cap Corse AOC",
+   "unite": "50 cl",
+   "prixTexte": "€27.00",
+   "description": "Naturally sweet wine: dried apricot, honey, orange blossom."
+  }
  },
  {
   "id": "vermentinu-igp-ile-de-beaute",
@@ -402,7 +568,13 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": true,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Vermentinu IGP Île de Beauté",
+   "unite": "75 cl",
+   "prixTexte": "€14.90",
+   "description": "A lively, floral white for easy drinking. The aperitif wine."
+  }
  },
  {
   "id": "aperitif-au-quinquina-u-capu",
@@ -416,7 +588,13 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": true,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Quinquina aperitif “U Capu”",
+   "unite": "75 cl",
+   "prixTexte": "€24.00",
+   "description": "Traditional aperitif made with wine, quinquina and Cap Corse botanicals."
+  }
  },
  {
   "id": "liqueur-de-myrte",
@@ -430,7 +608,13 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": true,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Myrtle liqueur",
+   "unite": "50 cl",
+   "prixTexte": "€26.00",
+   "description": "Hand-picked wild myrtle berries, macerated. Serve ice cold."
+  }
  },
  {
   "id": "eau-de-vie-de-cedrat-cedratina",
@@ -444,7 +628,13 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": true,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Citron liqueur “Cedratina”",
+   "unite": "50 cl",
+   "prixTexte": "€28.00",
+   "description": "Corsican citron liqueur, zesty and smooth."
+  }
  },
  {
   "id": "biere-a-la-chataigne",
@@ -460,7 +650,13 @@ window.CATALOGUE = [
   ],
   "vedette": false,
   "alcool": true,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Chestnut beer",
+   "unite": "33 cl",
+   "prixTexte": "€4.50",
+   "description": "Amber beer brewed with AOP chestnut flour."
+  }
  },
  {
   "id": "eau-minerale-de-source-corse",
@@ -474,7 +670,13 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Corsican spring water",
+   "unite": "75 cl",
+   "prixTexte": "€3.90",
+   "description": "Still mountain water, served at the counter like a fine wine."
+  }
  },
  {
   "id": "huile-d-olive-aop-oliu-di-corsica",
@@ -490,7 +692,13 @@ window.CATALOGUE = [
   ],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Oliu di Corsica AOP olive oil",
+   "unite": "50 cl",
+   "prixTexte": "€24.00",
+   "description": "Olives left to fall naturally, sabina variety. Mild, notes of almond and artichoke."
+  }
  },
  {
   "id": "huile-d-olive-fruite-vert",
@@ -504,7 +712,13 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Green fruity olive oil",
+   "unite": "50 cl",
+   "prixTexte": "€26.50",
+   "description": "Early-harvest ghjermana olives, peppery and grassy."
+  }
  },
  {
   "id": "huile-d-olive-a-l-immortelle",
@@ -520,7 +734,13 @@ window.CATALOGUE = [
   ],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Immortelle olive oil",
+   "unite": "25 cl",
+   "prixTexte": "€17.00",
+   "description": "AOP oil infused with maquis immortelle. For fish and grilled vegetables."
+  }
  },
  {
   "id": "miel-aop-de-chataigneraie",
@@ -536,7 +756,13 @@ window.CATALOGUE = [
   ],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Chestnut grove honey AOP",
+   "unite": "250 g",
+   "prixTexte": "€13.50",
+   "description": "Mele di Corsica: amber, bitter and powerful."
+  }
  },
  {
   "id": "miel-aop-maquis-de-printemps",
@@ -552,7 +778,13 @@ window.CATALOGUE = [
   ],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Spring maquis honey AOP",
+   "unite": "250 g",
+   "prixTexte": "€14.50",
+   "description": "Light and floral: white heather and rockrose."
+  }
  },
  {
   "id": "miel-aop-miellat-du-maquis",
@@ -569,7 +801,13 @@ window.CATALOGUE = [
   ],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Maquis honeydew honey AOP",
+   "unite": "250 g",
+   "prixTexte": "€16.00",
+   "description": "Dark, malty, rare."
+  }
  },
  {
   "id": "farine-de-chataigne-aop",
@@ -585,7 +823,13 @@ window.CATALOGUE = [
   ],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Chestnut flour AOP",
+   "unite": "500 g",
+   "prixTexte": "€12.90",
+   "description": "Farina castagnina, dried over a wood fire and stone-ground. For pulenda and fiadone."
+  }
  },
  {
   "id": "confiture-de-figue-noire",
@@ -599,7 +843,13 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Black fig jam",
+   "unite": "220 g",
+   "prixTexte": "€7.90",
+   "description": "Corsican figs with a touch of myrtle. Perfect with ewe's milk cheese."
+  }
  },
  {
   "id": "confiture-de-clementine-igp",
@@ -613,7 +863,13 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Clementine jam IGP",
+   "unite": "220 g",
+   "prixTexte": "€7.50",
+   "description": "Whole Corsican clementines, gently bitter."
+  }
  },
  {
   "id": "cedrat-confit",
@@ -627,7 +883,13 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Candied citron",
+   "unite": "150 g",
+   "prixTexte": "€11.00",
+   "description": "Candied citron peel, for baking or aperitif."
+  }
  },
  {
   "id": "soupe-corse",
@@ -641,7 +903,13 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Corsican soup",
+   "unite": "Jar, 750 g",
+   "prixTexte": "€10.50",
+   "description": "Country soup with beans, vegetables and herbs, ready to heat."
+  }
  },
  {
   "id": "tapenade-d-olives-et-nepita",
@@ -655,7 +923,13 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Olive and nepita tapenade",
+   "unite": "100 g",
+   "prixTexte": "€6.90",
+   "description": "Black olives and Corsican calamint."
+  }
  },
  {
   "id": "pates-a-la-farine-de-chataigne",
@@ -669,7 +943,13 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Chestnut flour pasta",
+   "unite": "250 g",
+   "prixTexte": "€6.50",
+   "description": "Artisan tagliatelle with 20% chestnut flour."
+  }
  },
  {
   "id": "herbes-du-maquis",
@@ -683,7 +963,13 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Maquis herbs",
+   "unite": "Jar, 30 g",
+   "prixTexte": "€6.50",
+   "description": "Hand-picked blend: rosemary, savory, thyme, myrtle, nepita."
+  }
  },
  {
   "id": "nepita-sechee",
@@ -697,7 +983,13 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Dried nepita",
+   "unite": "Jar, 20 g",
+   "prixTexte": "€6.90",
+   "description": "Corsican calamint, a peppery wild mint. Essential in a brocciu omelette."
+  }
  },
  {
   "id": "fleur-de-sel-a-l-immortelle",
@@ -711,7 +1003,13 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Immortelle fleur de sel",
+   "unite": "Jar, 100 g",
+   "prixTexte": "€8.50",
+   "description": "Fleur de sel with maquis immortelle, notes of mild curry."
+  }
  },
  {
   "id": "baies-de-myrte",
@@ -725,7 +1023,13 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Myrtle berries",
+   "unite": "Jar, 30 g",
+   "prixTexte": "€7.50",
+   "description": "For game, marinades and wild boar dishes."
+  }
  },
  {
   "id": "piment-doux-d-aleria",
@@ -739,7 +1043,13 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Aléria mild chilli",
+   "unite": "Jar, 40 g",
+   "prixTexte": "€7.90",
+   "description": "Mild chilli smoked over chestnut wood."
+  }
  },
  {
   "id": "poivre-du-lonzu",
@@ -753,7 +1063,13 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Lonzu pepper",
+   "unite": "Jar, 50 g",
+   "prixTexte": "€8.90",
+   "description": "The pepper and chilli blend our charcutiers use, for meats."
+  }
  },
  {
   "id": "tisane-du-berger",
@@ -767,7 +1083,13 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Shepherd's herbal tea",
+   "unite": "Bag, 40 g",
+   "prixTexte": "€8.00",
+   "description": "Immortelle, nepita, verbena, rockrose."
+  }
  },
  {
   "id": "coffret-des-cinq-herbes",
@@ -781,7 +1103,13 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Five herbs gift box",
+   "unite": "Gift box",
+   "prixTexte": "€34.00",
+   "description": "Five jars (CF-501 to 505) in an engraved wooden box."
+  }
  },
  {
   "id": "canistrelli-au-vin-blanc",
@@ -795,7 +1123,13 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "White wine canistrelli",
+   "unite": "350 g",
+   "prixTexte": "€8.50",
+   "description": "Crunchy biscuits made with olive oil and white wine."
+  }
  },
  {
   "id": "canistrelli-citron-anis",
@@ -809,7 +1143,13 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Lemon & anise canistrelli",
+   "unite": "350 g",
+   "prixTexte": "€8.50",
+   "description": "The most fragrant version, for coffee time."
+  }
  },
  {
   "id": "canistrelli-a-la-chataigne",
@@ -823,7 +1163,13 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Chestnut canistrelli",
+   "unite": "350 g",
+   "prixTexte": "€9.50",
+   "description": "Made with AOP chestnut flour."
+  }
  },
  {
   "id": "fiadone",
@@ -839,7 +1185,13 @@ window.CATALOGUE = [
   ],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Fiadone",
+   "unite": "Slice / whole cake for 6",
+   "prixTexte": "€4.50 / €24.00",
+   "description": "Brocciu and lemon zest cake, baked every morning."
+  }
  },
  {
   "id": "nougat-au-miel-du-maquis",
@@ -853,7 +1205,13 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Maquis honey nougat",
+   "unite": "200 g",
+   "prixTexte": "€12.00",
+   "description": "Soft nougat with almonds and AOP honey."
+  }
  },
  {
   "id": "marrons-glaces-corses",
@@ -869,7 +1227,13 @@ window.CATALOGUE = [
   ],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Corsican marrons glacés",
+   "unite": "6 pieces",
+   "prixTexte": "€19.00",
+   "description": "Chestnuts candied one by one. Winter season."
+  }
  },
  {
   "id": "clementines-confites",
@@ -883,7 +1247,13 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Candied clementines",
+   "unite": "150 g",
+   "prixTexte": "€14.00",
+   "description": "Whole Corsican clementines coated in dark chocolate."
+  }
  },
  {
   "id": "coffret-aperu",
@@ -897,7 +1267,13 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Apéru gift box",
+   "unite": "",
+   "prixTexte": "€49.00",
+   "description": "Coppa AOP 100 g, white wine canistrelli, nepita tapenade, Vermentinu IGP."
+  }
  },
  {
   "id": "coffret-calasima",
@@ -913,7 +1289,13 @@ window.CATALOGUE = [
   ],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Calasima gift box",
+   "unite": "",
+   "prixTexte": "€89.00",
+   "description": "AOP trilogy, Niolu tomme, fig jam, Patrimonio red “Cinque Frati”."
+  }
  },
  {
   "id": "coffret-cinque-frati-prestige",
@@ -927,7 +1309,13 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Cinque Frati prestige box",
+   "unite": "",
+   "prixTexte": "€189.00",
+   "description": "30-month prisuttu, lonzu, fleur du maquis, honeydew honey, AOP olive oil, Sartène “Vechju” and myrtle liqueur, in an engraved chestnut crate."
+  }
  },
  {
   "id": "coffret-prima-neve-noel-edition-limitee",
@@ -943,7 +1331,13 @@ window.CATALOGUE = [
   ],
   "vedette": true,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Prima Neve box (Christmas, limited edition)",
+   "unite": "",
+   "prixTexte": "€79.00",
+   "description": "Marrons glacés, nougat, chestnut grove honey, Muscat du Cap Corse, chestnut canistrelli."
+  }
  },
  {
   "id": "coffret-dolce",
@@ -957,7 +1351,13 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "Dolce gift box",
+   "unite": "",
+   "prixTexte": "€45.00",
+   "description": "Two canistrelli, nougat, candied clementines, shepherd's herbal tea."
+  }
  },
  {
   "id": "box-mensuelle-a-scatula-abonnement",
@@ -971,7 +1371,13 @@ window.CATALOGUE = [
   "badges": [],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "“A Scatula” monthly box (subscription)",
+   "unite": "",
+   "prixTexte": "€39.00/month",
+   "description": "5 to 7 seasonal products chosen by Baptiste, plus a producer profile and a recipe. Cancel anytime."
+  }
  },
  {
   "id": "box-a-scatula-grand-cru",
@@ -987,13 +1393,20 @@ window.CATALOGUE = [
   ],
   "vedette": false,
   "alcool": false,
-  "image": ""
+  "image": "",
+  "en": {
+   "nom": "“A Scatula” Grand Cru box",
+   "unite": "",
+   "prixTexte": "€59.00/month",
+   "description": "The monthly box plus a bottle of rare wine."
+  }
  }
 ];
 window.CARTES = {
  "carte-du-comptoir": {
   "nom": "Carte du comptoir",
   "nomCorse": "U bancone",
+  "nomEn": "Counter menu",
   "produits": [
    {
     "id": "planche-fratellu",
@@ -1007,7 +1420,13 @@ window.CARTES = {
     "badges": [],
     "vedette": false,
     "alcool": false,
-    "image": ""
+    "image": "",
+    "en": {
+     "nom": "Fratellu board",
+     "unite": "",
+     "prixTexte": "€14.00 (1 person)",
+     "description": "Coppa, lonzu, Niolu tomme, fig jam, bread."
+    }
    },
    {
     "id": "planche-des-cinque-frati",
@@ -1021,7 +1440,13 @@ window.CARTES = {
     "badges": [],
     "vedette": false,
     "alcool": false,
-    "image": ""
+    "image": "",
+    "en": {
+     "nom": "Cinque Frati board",
+     "unite": "",
+     "prixTexte": "€24.00 (2 people)",
+     "description": "Three AOP charcuteries, three cheeses, salamu, savoury canistrelli."
+    }
    },
    {
     "id": "degustation-3-vins-corses",
@@ -1035,7 +1460,13 @@ window.CARTES = {
     "badges": [],
     "vedette": false,
     "alcool": false,
-    "image": ""
+    "image": "",
+    "en": {
+     "nom": "3 Corsican wines tasting",
+     "unite": "",
+     "prixTexte": "€15.00",
+     "description": "Three 6 cl glasses with commentary (white, rosé, red)."
+    }
    },
    {
     "id": "degustation-3-huiles-aop",
@@ -1051,7 +1482,13 @@ window.CARTES = {
     ],
     "vedette": false,
     "alcool": false,
-    "image": ""
+    "image": "",
+    "en": {
+     "nom": "3 AOP olive oils tasting",
+     "unite": "",
+     "prixTexte": "€9.00",
+     "description": "Oils compared on bread, with our wine merchant."
+    }
    },
    {
     "id": "verre-de-vin",
@@ -1065,7 +1502,13 @@ window.CARTES = {
     "badges": [],
     "vedette": false,
     "alcool": false,
-    "image": ""
+    "image": "",
+    "en": {
+     "nom": "Glass of wine",
+     "unite": "",
+     "prixTexte": "€6 to €9",
+     "description": "Current selection."
+    }
    },
    {
     "id": "assiette-figatellu-grille-dec-mars",
@@ -1079,7 +1522,13 @@ window.CARTES = {
     "badges": [],
     "vedette": false,
     "alcool": false,
-    "image": ""
+    "image": "",
+    "en": {
+     "nom": "Grilled figatellu plate (Dec.–Mar.)",
+     "unite": "",
+     "prixTexte": "€13.00",
+     "description": "Figatellu with chestnut pulenda."
+    }
    },
    {
     "id": "fiadone-cafe",
@@ -1093,13 +1542,20 @@ window.CARTES = {
     "badges": [],
     "vedette": false,
     "alcool": false,
-    "image": ""
+    "image": "",
+    "en": {
+     "nom": "Fiadone & coffee",
+     "unite": "",
+     "prixTexte": "€7.00",
+     "description": "A slice of fiadone with coffee or shepherd's herbal tea."
+    }
    }
   ]
  },
  "salon-premium-ateliers": {
   "nom": "Salon premium & ateliers",
   "nomCorse": "A sala",
+  "nomEn": "Premium lounge & workshops",
   "produits": [
    {
     "id": "degustation-commentee-les-trois-aop",
@@ -1115,7 +1571,13 @@ window.CARTES = {
     ],
     "vedette": false,
     "alcool": false,
-    "image": ""
+    "image": "",
+    "en": {
+     "nom": "Guided tasting “The three AOPs”",
+     "unite": "1 h",
+     "prixTexte": "€35.00 / person",
+     "description": "Prisuttu, coppa, lonzu: learn to tell them apart, with three wines."
+    }
    },
    {
     "id": "degustation-vins-de-l-ile",
@@ -1129,7 +1591,13 @@ window.CARTES = {
     "badges": [],
     "vedette": false,
     "alcool": false,
-    "image": ""
+    "image": "",
+    "en": {
+     "nom": "“Island wines” tasting",
+     "unite": "1 h 30",
+     "prixTexte": "€45.00 / person",
+     "description": "Six wines, six terroirs, with our wine merchant."
+    }
    },
    {
     "id": "atelier-fiadone-canistrelli",
@@ -1143,7 +1611,13 @@ window.CARTES = {
     "badges": [],
     "vedette": false,
     "alcool": false,
-    "image": ""
+    "image": "",
+    "en": {
+     "nom": "Fiadone & canistrelli workshop",
+     "unite": "2 h",
+     "prixTexte": "€55.00 / person",
+     "description": "Bake, taste, and leave with the recipe and your biscuits."
+    }
    },
    {
     "id": "atelier-accords-fromages-miels",
@@ -1157,7 +1631,13 @@ window.CARTES = {
     "badges": [],
     "vedette": false,
     "alcool": false,
-    "image": ""
+    "image": "",
+    "en": {
+     "nom": "Cheese & honey pairing workshop",
+     "unite": "1 h 30",
+     "prixTexte": "€42.00 / person",
+     "description": "Five ewe's milk cheeses, five AOP honeys."
+    }
    },
    {
     "id": "soiree-producteur-mensuelle",
@@ -1171,7 +1651,13 @@ window.CARTES = {
     "badges": [],
     "vedette": false,
     "alcool": false,
-    "image": ""
+    "image": "",
+    "en": {
+     "nom": "Producer evening (monthly)",
+     "unite": "2 h 30",
+     "prixTexte": "€75.00 / person",
+     "description": "A producer comes from Corsica to present their work, in a small group, with a dinner of their products."
+    }
    },
    {
     "id": "voyage-immersif",
@@ -1185,7 +1671,13 @@ window.CARTES = {
     "badges": [],
     "vedette": false,
     "alcool": false,
-    "image": ""
+    "image": "",
+    "en": {
+     "nom": "Immersive journey",
+     "unite": "45 min",
+     "prixTexte": "€29.00 / person",
+     "description": "A virtual reality experience (from Calasima to Monte Cinto), followed by a Cinque Frati board and a glass."
+    }
    },
    {
     "id": "privatisation-du-salon",
@@ -1199,7 +1691,13 @@ window.CARTES = {
     "badges": [],
     "vedette": false,
     "alcool": false,
-    "image": ""
+    "image": "",
+    "en": {
+     "nom": "Private lounge hire",
+     "unite": "3 h",
+     "prixTexte": "from €65.00 / person",
+     "description": "Birthday, family, seminar: a tailored package, from 12 guests."
+    }
    },
    {
     "id": "carte-cadeau",
@@ -1213,7 +1711,13 @@ window.CARTES = {
     "badges": [],
     "vedette": false,
     "alcool": false,
-    "image": ""
+    "image": "",
+    "en": {
+     "nom": "Gift card",
+     "unite": "—",
+     "prixTexte": "€30 / €50 / €100",
+     "description": "Valid in the shop, at the counter and for workshops."
+    }
    }
   ]
  }

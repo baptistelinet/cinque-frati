@@ -17,11 +17,15 @@
   };
   ICONES["epices-herbes-du-maquis"] = '<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M24 44V10"/><path d="M24 16c-6-1-9-5-9-9 5 0 8 3 9 9zm0 0c6-1 9-5 9-9-5 0-8 3-9 9zM24 28c-7-1-11-6-11-11 6 0 10 4 11 11zm0 0c7-1 11-6 11-11-6 0-10 4-11 11z"/></svg>';
   var TEINTES = { charcuterie: "#c05839", fromages: "#b89f7a", "vins-spiritueux": "#7d3b33", "huiles-miels-epicerie": "#8a9082", "epices-herbes-du-maquis": "#5f665a", douceurs: "#a8714a", "box-coffrets": "#2b2622" };
-  var MENTION_ALCOOL = "L’abus d’alcool est dangereux pour la santé, à consommer avec modération.";
+  var EN = document.documentElement.lang === "en";
+  var BASE = EN ? "../" : "";
+  function L(fr, en) { return EN ? en : fr; }
+  function T(p, k) { return EN && p.en && k in p.en ? p.en[k] : p[k]; }
+  var MENTION_ALCOOL = L("L’abus d’alcool est dangereux pour la santé, à consommer avec modération.", "Alcohol abuse is dangerous for your health. Please drink responsibly.");
   var PANIER_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M5 8h14l-1.2 12H6.2z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>';
 
   /* ---------- Utilitaires ---------- */
-  function euros(n) { return n.toLocaleString("fr-FR", { style: "currency", currency: "EUR" }); }
+  function euros(n) { return n.toLocaleString(EN ? "en-GB" : "fr-FR", { style: "currency", currency: "EUR" }); }
   function el(html) { var t = document.createElement("template"); t.innerHTML = html.trim(); return t.content.firstElementChild; }
   function echappe(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
   function produit(id) { for (var i = 0; i < PRODUITS.length; i++) if (PRODUITS[i].id === id) return PRODUITS[i]; return null; }
@@ -29,23 +33,25 @@
 
   /* ---------- En-tête et pied ---------- */
   var liens = [
-    ["boutique.html", "La boutique", "boutique"],
-    ["degustation.html", "Déguster", "degustation"],
-    ["maison.html", "La maison", "maison"],
-    ["lieu.html", "Le lieu", "lieu"],
-    ["index.html#visite", "Nous trouver", "visite"]
+    ["boutique.html", L("La boutique", "Shop"), "boutique"],
+    ["degustation.html", L("Déguster", "Taste"), "degustation"],
+    ["maison.html", L("La maison", "Our story"), "maison"],
+    ["lieu.html", L("Le lieu", "The space"), "lieu"],
+    ["index.html#visite", L("Nous trouver", "Visit us"), "visite"]
   ];
+  var fichier = location.pathname.split("/").pop() || "index.html";
+  var autreLangue = (EN ? "../" : "en/") + fichier + location.hash;
   var nav = liens.map(function (l) {
     return '<a href="' + l[0] + '"' + (page === l[2] ? ' aria-current="page"' : "") + ">" + l[1] + "</a>";
   }).join("");
 
-  document.body.insertBefore(el('<div class="bandeau-fictif">Projet fictif réalisé dans le cadre d’un portfolio d’architecture d’intérieur. Aucune vente réelle.</div>'), document.body.firstChild);
+  document.body.insertBefore(el('<div class="bandeau-fictif">' + L("Projet fictif réalisé dans le cadre d’un portfolio d’architecture d’intérieur. Aucune vente réelle.", "A fictional project created for an interior architecture portfolio. Nothing is actually sold.") + '</div>'), document.body.firstChild);
   document.body.insertBefore(el(
     '<header class="entete"><div class="conteneur entete__barre">' +
-      '<a class="marque" href="index.html" aria-label="Cinque Frati, accueil"><img src="assets/img/logo.png" alt=""><span>Cinque Frati</span></a>' +
-      '<nav class="nav" id="nav" aria-label="Navigation principale">' + nav + "</nav>" +
-      '<div class="actions">' +
-        '<button class="bouton-panier" type="button" data-ouvrir-panier aria-label="Ouvrir le panier">' + PANIER_SVG + '<span class="libelle">Panier</span><span class="pastille" data-compteur>0</span></button>' +
+      '<a class="marque" href="index.html" aria-label="' + L("Cinque Frati, accueil", "Cinque Frati, home") + '"><img src="' + BASE + 'assets/img/logo.png" alt=""><span>Cinque Frati</span></a>' +
+      '<nav class="nav" id="nav" aria-label="' + L("Navigation principale", "Main navigation") + '">' + nav + "</nav>" +
+      '<div class="actions"><a class="langue" href="' + autreLangue + '" hreflang="' + L("en", "fr") + '" lang="' + L("en", "fr") + '" aria-label="' + L("English version", "Version française") + '">' + L("EN", "FR") + "</a>" +
+        '<button class="bouton-panier" type="button" data-ouvrir-panier aria-label="' + L("Ouvrir le panier", "Open basket") + '">' + PANIER_SVG + '<span class="libelle">' + L("Panier", "Basket") + "</span>" + '<span class="pastille" data-compteur>0</span></button>' +
         '<button class="burger" type="button" aria-controls="nav" aria-expanded="false" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 7h18M3 12h18M3 17h18"/></svg></button>' +
       "</div></div></header>"
   ), document.body.children[1]);
@@ -53,26 +59,26 @@
   document.body.appendChild(el(
     '<footer class="pied"><div class="conteneur">' +
       '<div class="pied__grille">' +
-        '<div><a class="marque" href="index.html"><img src="assets/img/logo.png" alt=""><span>Cinque Frati</span></a>' +
-          '<p style="margin-top:16px;max-width:34ch">Épicerie fine corse et comptoir de dégustation aux Halles de Lyon Paul Bocuse.</p>' +
-          '<form class="lettre" data-lettre><label class="visuellement-cache" for="courriel">Votre e-mail</label><input id="courriel" type="email" placeholder="Votre e-mail" required><button class="bouton" type="submit">S’inscrire</button></form></div>' +
-        '<div><h4>Boutique</h4>' + CATS.map(function (c) { return '<a href="boutique.html#' + c.id + '">' + c.nom + "</a>"; }).join("") + "</div>" +
-        '<div><h4>La maison</h4><a href="maison.html">Notre histoire</a><a href="lieu.html">Le lieu</a><a href="degustation.html">Le comptoir</a><a href="degustation.html#ateliers">Ateliers</a><a href="degustation.html#club">Le Club</a></div>' +
-        '<div><h4>Nous trouver</h4><p>Halles de Lyon Paul Bocuse<br>102 cours Lafayette<br>69003 Lyon</p><p>Mar.–sam. 7 h–19 h<br>Dim. 7 h–13 h · fermé lundi</p><a href="https://www.instagram.com/" rel="noopener">Instagram</a></div>' +
+        '<div><a class="marque" href="index.html"><img src="' + BASE + 'assets/img/logo.png" alt=""><span>Cinque Frati</span></a>' +
+          '<p style="margin-top:16px;max-width:34ch">' + L("Épicerie fine corse et comptoir de dégustation aux Halles de Lyon Paul Bocuse.", "Corsican delicatessen and tasting counter at Les Halles de Lyon Paul Bocuse.") + "</p>" + '' +
+          '<form class="lettre" data-lettre><label class="visuellement-cache" for="courriel">' + L("Votre e-mail", "Your email") + '</label><input id="courriel" type="email" placeholder="' + L("Votre e-mail", "Your email") + '" required><button class="bouton" type="submit">' + L("S’inscrire", "Sign up") + "</button></form></div>" + '' +
+        "<div><h4>" + L("Boutique", "Shop") + "</h4>" + CATS.map(function (c) { return '<a href="boutique.html#' + c.id + '">' + T(c, "nom") + "</a>"; }).join("") + "</div>" +
+        "<div><h4>" + L("La maison", "Cinque Frati") + '</h4><a href="maison.html">' + L("Notre histoire", "Our story") + '</a><a href="lieu.html">' + L("Le lieu", "The space") + '</a><a href="degustation.html">' + L("Le comptoir", "The counter") + '</a><a href="degustation.html#ateliers">' + L("Ateliers", "Workshops") + '</a><a href="degustation.html#club">' + L("Le Club", "The Club") + "</a></div>" +
+        "<div><h4>" + L("Nous trouver", "Visit us") + "</h4><p>Halles de Lyon Paul Bocuse<br>102 cours Lafayette<br>69003 Lyon</p><p>" + L("Mar.–sam. 7 h–19 h<br>Dim. 7 h–13 h · fermé lundi", "Tue–Sat 7am–7pm<br>Sun 7am–1pm · closed Monday") + '</p><a href="https://www.instagram.com/" rel="noopener">Instagram</a></div>' +
       "</div>" +
       '<div class="pied__bas"><span>© ' + new Date().getFullYear() + " Cinque Frati</span>" +
-        "<span>Conception Baptiste Linet, projet APD 2025. Projet fictif, aucune vente réelle.</span><span>" + MENTION_ALCOOL + "</span></div>" +
+        "<span>" + L("Conception Baptiste Linet, projet APD 2025. Projet fictif, aucune vente réelle.", "Designed by Baptiste Linet, 2025 design project. Fictional project, nothing is sold.") + "</span><span>" + MENTION_ALCOOL + "</span></div>" +
     "</div></footer>"
   ));
 
   document.body.appendChild(el('<div class="voile" data-fermer-panier></div>'));
   document.body.appendChild(el(
-    '<aside class="tiroir" aria-label="Panier" aria-hidden="true">' +
-      '<div class="tiroir__tete"><h2>Votre panier</h2><button class="fermer" type="button" data-fermer-panier aria-label="Fermer">×</button></div>' +
+    '<aside class="tiroir" aria-label="' + L("Panier", "Basket") + '" aria-hidden="true">' +
+      '<div class="tiroir__tete"><h2>' + L("Votre panier", "Your basket") + '</h2><button class="fermer" type="button" data-fermer-panier aria-label="' + L("Fermer", "Close") + '">×</button></div>' +
       '<div class="tiroir__corps" data-lignes></div>' +
       '<div class="tiroir__pied"><div class="total"><span>Total</span><strong data-total>0 €</strong></div>' +
-        '<p class="note-demo">Boutique de démonstration : aucune commande n’est réellement passée.</p>' +
-        '<button class="bouton" type="button" data-commander>Commander pour retrait aux Halles</button></div>' +
+        '<p class="note-demo">' + L("Boutique de démonstration : aucune commande n’est réellement passée.", "Demo shop: no order is actually placed.") + "</p>" +
+        '<button class="bouton" type="button" data-commander>' + L("Commander pour retrait aux Halles", "Order for pick-up at Les Halles") + "</button></div>" +
     "</aside>"
   ));
   document.body.appendChild(el('<div class="toast" role="status" aria-live="polite"></div>'));
@@ -83,6 +89,7 @@
     var ouvert = navEl.classList.toggle("ouvert");
     burger.setAttribute("aria-expanded", ouvert);
   });
+  document.querySelector(".langue").addEventListener("click", function () { this.href = (EN ? "../" : "en/") + fichier + location.hash; });
   navEl.addEventListener("click", function (e) { if (e.target.tagName === "A") navEl.classList.remove("ouvert"); });
 
   var toastEl = document.querySelector(".toast"), toastMinuteur;
@@ -92,7 +99,7 @@
   }
 
   document.querySelector("[data-lettre]").addEventListener("submit", function (e) {
-    e.preventDefault(); e.target.reset(); toast("Merci ! (démonstration : aucune inscription enregistrée)");
+    e.preventDefault(); e.target.reset(); toast(L("Merci ! (démonstration : aucune inscription enregistrée)", "Thank you! (demo: nothing was saved)"));
   });
 
   /* ---------- Panier (stocké dans le navigateur) ---------- */
@@ -111,11 +118,11 @@
     var lignes = ids.map(function (id) {
       var p = produit(id), q = panier[id];
       nb += q; total += q * p.prix;
-      return '<div class="ligne-panier"><span class="nom">' + echappe(p.nom) + '</span><span class="unite">' + echappe(p.unite) + " · " + euros(p.prix) + "</span>" +
-        '<span class="quantite"><button type="button" data-moins="' + id + '" aria-label="Retirer un">−</button><span>' + q + '</span><button type="button" data-plus="' + id + '" aria-label="Ajouter un">+</button></span>' +
+      return '<div class="ligne-panier"><span class="nom">' + echappe(T(p, "nom")) + '</span><span class="unite">' + echappe(T(p, "unite")) + " · " + euros(p.prix) + "</span>" +
+        '<span class="quantite"><button type="button" data-moins="' + id + '" aria-label="' + L("Retirer un", "Remove one") + '">−</button><span>' + q + '</span><button type="button" data-plus="' + id + '" aria-label="' + L("Ajouter un", "Add one") + '">+</button></span>' +
         '<span class="montant">' + euros(q * p.prix) + "</span></div>";
     }).join("");
-    document.querySelector("[data-lignes]").innerHTML = lignes || '<p class="panier-vide">Votre panier est vide.<br><a href="boutique.html">Découvrir la boutique</a></p>';
+    document.querySelector("[data-lignes]").innerHTML = lignes || L('<p class="panier-vide">Votre panier est vide.<br><a href="boutique.html">Découvrir la boutique</a></p>', '<p class="panier-vide">Your basket is empty.<br><a href="boutique.html">Browse the shop</a></p>');
     document.querySelector("[data-total]").textContent = euros(total);
     var c = document.querySelector("[data-compteur]");
     c.textContent = nb; if (nb) c.removeAttribute("data-vide"); else c.setAttribute("data-vide", "");
@@ -123,8 +130,8 @@
 
   function ajouter(id, bouton) {
     panier[id] = (panier[id] || 0) + 1; sauver(); rendrePanier();
-    toast(produit(id).nom + " ajouté au panier");
-    if (bouton) { bouton.classList.add("ok"); bouton.textContent = "Ajouté ✓"; setTimeout(function () { bouton.classList.remove("ok"); bouton.textContent = "Ajouter"; }, 1400); }
+    toast(T(produit(id), "nom") + L(" ajouté au panier", " added to your basket"));
+    if (bouton) { var avant = bouton.textContent; bouton.classList.add("ok"); bouton.textContent = L("Ajouté ✓", "Added ✓"); setTimeout(function () { bouton.classList.remove("ok"); bouton.textContent = avant; }, 1400); }
   }
 
   document.addEventListener("click", function (e) {
@@ -136,9 +143,9 @@
     else if (t.dataset.moins) { panier[t.dataset.moins]--; if (panier[t.dataset.moins] <= 0) delete panier[t.dataset.moins]; sauver(); rendrePanier(); }
     else if (t.dataset.ajouter) ajouter(t.dataset.ajouter, t);
     else if (t.hasAttribute("data-commander")) {
-      if (!Object.keys(panier).length) { toast("Votre panier est vide"); return; }
+      if (!Object.keys(panier).length) { toast(L("Votre panier est vide", "Your basket is empty")); return; }
       panier = {}; sauver(); rendrePanier(); fermerPanier();
-      toast("Merci ! Commande fictive : rien n’a été débité.");
+      toast(L("Merci ! Commande fictive : rien n’a été débité.", "Thank you! Demo order: nothing was charged."));
     } else if (t.dataset.fiche) ouvrirFiche(t.dataset.fiche);
   });
   document.addEventListener("keydown", function (e) { if (e.key === "Escape") fermerPanier(); });
@@ -146,18 +153,19 @@
 
   /* ---------- Cartes produits ---------- */
   function visuel(p) {
-    if (p.image) return '<img src="' + echappe(p.image) + '" alt="' + echappe(p.nom) + '" loading="lazy">';
+    if (p.image) return '<img src="' + BASE + echappe(p.image) + '" alt="' + echappe(T(p, "nom")) + '" loading="lazy">';
     return '<span class="produit__illus" style="background:' + (TEINTES[p.categorie] || "#c05839") + '">' + (ICONES[p.categorie] || "") + "</span>";
   }
-  function prixAffiche(p) { return p.prixTexte || euros(p.prix); }
+  function prixAffiche(p) { return T(p, "prixTexte") || euros(p.prix); }
+  var BADGES_EN = { "De saison": "In season", "Coup de cœur": "Staff pick", "Nouveau": "New" };
   function pastilles(p) {
-    return (p.badges || []).map(function (b) { return '<span class="badge' + (b === "AOP" || b === "AOC" ? " badge--aop" : "") + '">' + echappe(b) + "</span>"; }).join("");
+    return (p.badges || []).map(function (b) { return '<span class="badge' + (b === "AOP" || b === "AOC" ? " badge--aop" : "") + '">' + echappe(EN && BADGES_EN[b] ? BADGES_EN[b] : b) + "</span>"; }).join("");
   }
   function carte(p) {
     return '<article class="produit revele">' +
-      '<button class="produit__visuel" type="button" data-fiche="' + p.id + '" aria-label="Voir la fiche ' + echappe(p.nom) + '">' + visuel(p) + '<span class="produit__badges">' + pastilles(p) + "</span></button>" +
-      '<div class="produit__corps"><h3>' + echappe(p.nom) + '</h3><span class="produit__unite">' + echappe(p.unite) + "</span>" +
-      '<div class="produit__pied"><span class="prix">' + echappe(prixAffiche(p)) + '</span><button class="ajouter" type="button" data-ajouter="' + p.id + '">Ajouter</button></div></div></article>';
+      '<button class="produit__visuel" type="button" data-fiche="' + p.id + '" aria-label="' + L("Voir la fiche ", "View ") + echappe(T(p, "nom")) + '">' + visuel(p) + '<span class="produit__badges">' + pastilles(p) + "</span></button>" +
+      '<div class="produit__corps"><h3>' + echappe(T(p, "nom")) + '</h3><span class="produit__unite">' + echappe(T(p, "unite")) + "</span>" +
+      '<div class="produit__pied"><span class="prix">' + echappe(prixAffiche(p)) + '</span><button class="ajouter" type="button" data-ajouter="' + p.id + '">' + L("Ajouter", "Add") + "</button></div></div></article>";
   }
 
   var dialogue;
@@ -165,12 +173,12 @@
     var p = produit(id); if (!p) return;
     if (!dialogue) { dialogue = el('<dialog class="fiche"></dialog>'); document.body.appendChild(dialogue); dialogue.addEventListener("click", function (e) { if (e.target === dialogue || e.target.closest(".fermer")) dialogue.close(); }); }
     var c = categorie(p.categorie);
-    dialogue.innerHTML = '<button class="fermer" type="button" aria-label="Fermer">×</button><div class="fiche__grille">' +
+    dialogue.innerHTML = '<button class="fermer" type="button" aria-label="' + L("Fermer", "Close") + '">×</button><div class="fiche__grille">' +
       '<div class="produit__visuel">' + visuel(p) + '<span class="produit__badges">' + pastilles(p) + "</span></div>" +
-      '<div class="fiche__texte"><span class="surtitre">' + echappe(c ? c.nomCorse + " · " + c.nom : "") + "</span><h2>" + echappe(p.nom) + "</h2>" +
-      '<span class="produit__unite">' + echappe(p.unite) + " · réf. " + echappe(p.ref) + "</span><p>" + echappe(p.description) + "</p>" +
-      '<p class="produit__unite">Goûtez-le au comptoir, aux Halles de Lyon Paul Bocuse.</p>' +
-      '<div class="produit__pied"><span class="prix">' + echappe(prixAffiche(p)) + '</span><button class="bouton" type="button" data-ajouter="' + p.id + '">Ajouter au panier</button></div>' +
+      '<div class="fiche__texte"><span class="surtitre">' + echappe(c ? c.nomCorse + " · " + T(c, "nom") : "") + "</span><h2>" + echappe(T(p, "nom")) + "</h2>" +
+      '<span class="produit__unite">' + echappe(T(p, "unite")) + (T(p, "unite") ? " · " : "") + L("réf. ", "ref. ") + echappe(p.ref) + "</span><p>" + echappe(T(p, "description")) + "</p>" +
+      '<p class="produit__unite">' + L("Goûtez-le au comptoir, aux Halles de Lyon Paul Bocuse.", "Taste it at our counter, at Les Halles de Lyon Paul Bocuse.") + "</p>" +
+      '<div class="produit__pied"><span class="prix">' + echappe(prixAffiche(p)) + '</span><button class="bouton" type="button" data-ajouter="' + p.id + '">' + L("Ajouter au panier", "Add to basket") + "</button></div>" +
       (p.alcool ? '<p class="mention-alcool">' + MENTION_ALCOOL + "</p>" : "") + "</div></div>";
     if (dialogue.showModal) dialogue.showModal(); else dialogue.setAttribute("open", "");
   }
@@ -180,15 +188,15 @@
   [].forEach.call(document.querySelectorAll("[data-carte]"), function (zone) {
     var bloc = CARTES[zone.dataset.carte]; if (!bloc) return;
     zone.innerHTML = bloc.produits.map(function (p) {
-      return '<li class="menu__ligne"><div><strong>' + echappe(p.nom) + "</strong>" + (p.unite ? ' <span class="produit__unite">· ' + echappe(p.unite) + "</span>" : "") +
-        "<p>" + echappe(p.description) + '</p></div><span class="prix">' + echappe(p.prixTexte) + "</span></li>";
+      return '<li class="menu__ligne"><div><strong>' + echappe(T(p, "nom")) + "</strong>" + (T(p, "unite") ? ' <span class="produit__unite">· ' + echappe(T(p, "unite")) + "</span>" : "") +
+        "<p>" + echappe(T(p, "description")) + '</p></div><span class="prix">' + echappe(T(p, "prixTexte")) + "</span></li>";
     }).join("");
   });
 
   /* Catégories en arches (accueil) */
   var arches = document.querySelector("[data-arches]");
   if (arches) arches.innerHTML = CATS.map(function (c) {
-    return '<a class="arche-carte revele" href="boutique.html#' + c.id + '">' + (ICONES[c.id] || "") + "<h3>" + echappe(c.nom) + "</h3></a>";
+    return '<a class="arche-carte revele" href="boutique.html#' + c.id + '">' + (ICONES[c.id] || "") + "<h3>" + echappe(T(c, "nom")) + "</h3></a>";
   }).join("");
 
   /* Produits vedettes (accueil) */
@@ -203,19 +211,19 @@
     var recherche = document.querySelector("[data-recherche]");
     var courante = (location.hash || "").slice(1);
     if (!categorie(courante)) courante = "";
-    filtres.innerHTML = '<button class="filtre" type="button" data-cat="">Tout</button>' + CATS.map(function (c) {
-      return '<button class="filtre" type="button" data-cat="' + c.id + '">' + echappe(c.nom) + "</button>";
+    filtres.innerHTML = '<button class="filtre" type="button" data-cat="">' + L("Tout", "All") + "</button>" + CATS.map(function (c) {
+      return '<button class="filtre" type="button" data-cat="' + c.id + '">' + echappe(T(c, "nom")) + "</button>";
     }).join("");
     function afficher() {
       var q = (recherche.value || "").trim().toLowerCase();
       [].forEach.call(filtres.children, function (b) { b.setAttribute("aria-pressed", b.dataset.cat === courante); });
       var c = categorie(courante);
-      intro.textContent = c ? c.accroche : PRODUITS.length + " produits sélectionnés chez les producteurs de l’île.";
+      intro.textContent = c ? T(c, "accroche") : PRODUITS.length + L(" produits sélectionnés chez les producteurs de l’île.", " products chosen from the island’s producers.");
       var liste = PRODUITS.filter(function (p) {
         return (!courante || p.categorie === courante) &&
-          (!q || (p.nom + " " + p.description + " " + p.origine).toLowerCase().indexOf(q) !== -1);
+          (!q || (p.nom + " " + p.description + " " + T(p, "nom") + " " + T(p, "description") + " " + p.badges.join(" ")).toLowerCase().indexOf(q) !== -1);
       });
-      grille.innerHTML = liste.length ? liste.map(carte).join("") : '<p class="panier-vide">Aucun produit ne correspond à votre recherche.</p>';
+      grille.innerHTML = liste.length ? liste.map(carte).join("") : '<p class="panier-vide">' + L("Aucun produit ne correspond à votre recherche.", "No product matches your search.") + "</p>";
       observer();
     }
     filtres.addEventListener("click", function (e) {

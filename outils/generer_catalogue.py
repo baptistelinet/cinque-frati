@@ -9,6 +9,7 @@ import json, re, pathlib
 
 RACINE = pathlib.Path(__file__).resolve().parent.parent
 SOURCE = RACINE / "donnees" / "catalogue.json"
+SOURCE_EN = RACINE / "donnees" / "catalogue-en.json"
 CIBLE = RACINE / "assets" / "js" / "catalogue.js"
 IMAGES = RACINE / "assets" / "img" / "produits"
 
@@ -53,12 +54,21 @@ def image(slug):
 
 def main():
     data = json.loads(SOURCE.read_text(encoding="utf-8"))
+    en = json.loads(SOURCE_EN.read_text(encoding="utf-8")) if SOURCE_EN.exists() else {}
+    cats_en = en.get("_categories", {})
+    manquants = []
     cats, produits, extra = [], [], {}
     for c in data:
         if c["slug"] in BOUTIQUE:
-            cats.append({"id": c["slug"], "nom": c["categorie"], "nomCorse": c["nom_corse"], "accroche": ACCROCHES.get(c["slug"], "")})
+            ce = cats_en.get(c["slug"], [c["categorie"], ACCROCHES.get(c["slug"], "")])
+            cats.append({"id": c["slug"], "nom": c["categorie"], "nomCorse": c["nom_corse"], "accroche": ACCROCHES.get(c["slug"], ""),
+                         "en": {"nom": ce[0], "accroche": ce[1]}})
         items = []
         for p in c["produits"]:
+            t = en.get(p["ref"])
+            if not t:
+                manquants.append(p["ref"])
+                t = [p["nom"], p.get("format", ""), p["prix"], p["description"]]
             items.append({
                 "id": p["slug"], "ref": p["ref"], "categorie": c["slug"], "nom": p["nom"],
                 "description": p["description"], "unite": p.get("format", ""),
@@ -66,16 +76,19 @@ def main():
                 "badges": badges(p), "vedette": p["ref"] in VEDETTES,
                 "alcool": c["slug"] == "vins-spiritueux" and p["ref"] not in ("CF-312",),
                 "image": image(p["slug"]),
+                "en": {"nom": t[0], "unite": t[1], "prixTexte": t[2], "description": t[3]},
             })
         if c["slug"] in BOUTIQUE:
             produits += items
         else:
-            extra[c["slug"]] = {"nom": c["categorie"], "nomCorse": c["nom_corse"], "produits": items}
+            extra[c["slug"]] = {"nom": c["categorie"], "nomCorse": c["nom_corse"], "nomEn": cats_en.get(c["slug"], [c["categorie"]])[0], "produits": items}
     js = ("/* Fichier généré par outils/generer_catalogue.py à partir de donnees/catalogue.json. Ne pas modifier à la main. */\n"
           f"window.CATEGORIES = {json.dumps(cats, ensure_ascii=False, indent=1)};\n"
           f"window.CATALOGUE = {json.dumps(produits, ensure_ascii=False, indent=1)};\n"
           f"window.CARTES = {json.dumps(extra, ensure_ascii=False, indent=1)};\n")
     CIBLE.write_text(js, encoding="utf-8")
+    if manquants:
+        print("Traduction anglaise manquante (texte français utilisé) :", ", ".join(manquants))
     print(f"{len(produits)} produits boutique, {sum(len(v['produits']) for v in extra.values())} formules comptoir/salon -> {CIBLE.relative_to(RACINE)}")
 
 
