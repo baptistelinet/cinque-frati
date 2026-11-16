@@ -64,6 +64,7 @@ h1 em, h2 em { color: var(--terracotta); }
 .section--terracotta { background: var(--terracotta); color: var(--blanc); }
 .section--sauge .surtitre, .section--encre .surtitre { color: var(--terracotta-clair); }
 .section--terracotta .surtitre { color: var(--blanc); }
+.section--terracotta h2 em, .section--terracotta h1 em { color: var(--pierre); }
 .chapo { font-size: clamp(1.1rem, 1.5vw, 1.35rem); color: var(--encre-douce); max-width: 56ch; line-height: 1.55; }
 .section--sauge .chapo, .section--encre .chapo, .section--terracotta .chapo { color: rgba(251, 249, 245, .82); }
 
@@ -476,3 +477,29 @@ dialog.fiche::backdrop { background: rgba(20, 17, 15, .6); backdrop-filter: blur
 }
 
 .visuellement-cache { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* ---------- Pictogrammes et déclinaisons (sprite assets/img/pictos.svg) ---------- */
+.picto { width: 1.5em; height: 1.5em; flex: none; color: currentColor; --picto-accent: var(--terracotta); --picto-trait: 1.5; vertical-align: middle; overflow: visible; }
+.picto--pilier { display: block; width: 46px; height: 46px; color: var(--encre); margin-bottom: 22px; }
+.section--sauge .picto--pilier, .section--terracotta .picto--pilier { color: currentColor; --picto-accent: currentColor; }
+.picto--titre { width: 22px; height: 22px; margin: -3px 10px 0 0; }
+.picto--offre { display: block; width: 44px; height: 44px; margin-bottom: 18px; color: var(--encre); }
+.offre--mise-en-avant .picto--offre { color: var(--creme); --picto-accent: var(--creme); }
+.rayon__illus .picto { width: 30%; height: auto; aspect-ratio: 1; color: rgba(251, 249, 245, .9); --picto-accent: #f3c9b3; --picto-trait: 1.2; }
+.produit__illus .picto { width: 38%; height: auto; aspect-ratio: 1; color: var(--blanc); --picto-accent: rgba(255, 255, 255, .6); --picto-trait: 1.2; }
+.produit__illus[style*="#c05839"] .picto { --picto-accent: #f3c9b3; }
+.ligne-panier__visuel .produit__illus .picto { width: 50%; }
+.sceau { display: block; width: 120px; height: 120px; margin: 0 0 28px; }
+.collant__texte .sceau { margin: 48px 0 0; width: 132px; height: 132px; }
+@media (prefers-reduced-motion: no-preference) { .sceau--tourne { animation: sceau-tourne 40s linear infinite; } }
+@keyframes sceau-tourne { to { transform: rotate(360deg); } }
+.section--motif { position: relative; isolation: isolate; }
+.section--motif::before { content: ""; position: absolute; inset: 0; z-index: -1; background: url("../img/motifs/motif-ecailles-terre-tuile.svg") repeat 0 0 / 80px 60px; opacity: .22; -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 70%); mask-image: linear-gradient(90deg, transparent 0%, #000 70%); }
+.pied { position: relative; }
+.pied__frise { position: absolute; top: 0; left: 0; right: 0; height: 64px; background: url("../img/motifs/motif-arcades-nuit-tuile.svg") repeat-x 0 0 / 80px 80px; opacity: .5; -webkit-mask-image: linear-gradient(#000, transparent); mask-image: linear-gradient(#000, transparent); }
+.pied__ligne { display: flex; gap: 12px; align-items: flex-start; margin: 0 0 12px; }
+.pied__ligne .picto { width: 20px; height: 20px; color: var(--creme); --picto-accent: var(--terracotta); margin-top: 2px; }
+.pied__reseaux { display: flex; gap: 10px; margin-top: 18px; }
+.pied a.pied__reseaux, .pied__reseaux a { display: grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid rgba(244, 240, 233, .2); border-radius: 50%; transition: border-color .25s, color .25s; }
+.pied__reseaux a:hover { border-color: var(--terracotta); }
+.pied__reseaux .picto { width: 20px; height: 20px; --picto-accent: var(--terracotta); }

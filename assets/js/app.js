@@ -7,18 +7,14 @@
   var page = document.body.dataset.page || "";
 
   /* ---------- Icônes ---------- */
-  var ICONES = {
-    charcuterie: '<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M24 4v6"/><ellipse cx="24" cy="27" rx="10" ry="17"/><path d="M17 20c2 1 4 0 5 2m4 4c2 1 4 0 5 2m-12 6c2 1 4 0 5 2"/></svg>',
-    fromages: '<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M6 32 40 14v20H6z"/><path d="M6 32 26 22l14-8"/><circle cx="18" cy="31" r="2"/><circle cx="30" cy="27" r="2.5"/></svg>',
-    "vins-spiritueux": '<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M20 4h8v10c4 2 6 6 6 10v20H14V24c0-4 2-8 6-10z"/><path d="M14 28h20"/></svg>',
-    "huiles-miels-epicerie": '<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 14h24v26a4 4 0 0 1-4 4H16a4 4 0 0 1-4-4z"/><path d="M14 8h20v6H14z"/><path d="M18 26c3-3 9-3 12 0-3 3-9 3-12 0z"/></svg>',
-    douceurs: '<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M24 6c8 0 16 8 16 18S32 42 24 42 8 34 8 24 16 6 24 6z"/><path d="M24 6c-2 4-2 8 0 10"/><path d="M15 26c3 6 15 6 18 0"/></svg>',
-    "box-coffrets": '<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M8 18h32v24H8z"/><path d="M6 12h36v6H6zM24 12v30"/><path d="M24 12c-4-6-12-6-10-1 1 2 6 1 10 1zm0 0c4-6 12-6 10-1-1 2-6 1-10 1z"/></svg>'
-  };
-  ICONES["epices-herbes-du-maquis"] = '<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M24 44V10"/><path d="M24 16c-6-1-9-5-9-9 5 0 8 3 9 9zm0 0c6-1 9-5 9-9-5 0-8 3-9 9zM24 28c-7-1-11-6-11-11 6 0 10 4 11 11zm0 0c7-1 11-6 11-11-6 0-10 4-11 11z"/></svg>';
-  var TEINTES = { charcuterie: "#c05839", fromages: "#b89f7a", "vins-spiritueux": "#7d3b33", "huiles-miels-epicerie": "#8a9082", "epices-herbes-du-maquis": "#5f665a", douceurs: "#a8714a", "box-coffrets": "#2b2622" };
   var EN = document.documentElement.lang === "en";
   var BASE = EN ? "../" : "";
+  /* Pictogrammes : sprite assets/img/pictos.svg (symboles picto-NOM) */
+  function picto(nom, classe) { return '<svg class="picto' + (classe ? " " + classe : "") + '" aria-hidden="true"><use href="' + BASE + 'assets/img/pictos.svg#picto-' + nom + '"/></svg>'; }
+  var PICTO_CAT = {"charcuterie": "charcuterie", "fromages": "fromages", "vins-spiritueux": "vins", "huiles-miels-epicerie": "huiles-miels", "epices-herbes-du-maquis": "epices", "douceurs": "douceurs", "box-coffrets": "box"};
+  var ICONES = {};
+  Object.keys(PICTO_CAT).forEach(function (k) { ICONES[k] = picto(PICTO_CAT[k]); });
+  var TEINTES = { charcuterie: "#c05839", fromages: "#b89f7a", "vins-spiritueux": "#7d3b33", "huiles-miels-epicerie": "#8a9082", "epices-herbes-du-maquis": "#5f665a", douceurs: "#a8714a", "box-coffrets": "#2b2622" };
   function L(fr, en) { return EN ? en : fr; }
   function T(p, k) { return EN && p.en && k in p.en ? p.en[k] : p[k]; }
   var MENTION_ALCOOL = L("L’abus d’alcool est dangereux pour la santé, à consommer avec modération.", "Please drink responsibly.");
@@ -61,14 +57,14 @@
 
   /* ---------- Pied de page ---------- */
   document.body.appendChild(el(
-    '<footer class="pied"><div class="conteneur">' +
+    '<footer class="pied"><div class="pied__frise" aria-hidden="true"></div><div class="conteneur">' +
       '<div class="pied__appel"><div><h2>' + L("Le <em>figatellu</em> ne se commande pas. Il s’attend.", "You don’t order <em>figatellu</em>. You wait for it.") + '</h2><p style="margin:16px 0 0">' + L("Inscrivez-vous, on vous prévient le jour où il arrive.", "Sign up and we’ll tell you the day it lands.") + "</p></div>" +
         '<form class="lettre" data-lettre><label class="visuellement-cache" for="courriel">' + L("Votre e-mail", "Your email") + '</label><input id="courriel" type="email" placeholder="' + L("Votre e-mail", "Your email") + '" required><button class="bouton" type="submit">' + L("Me prévenir", "Notify me") + "</button></form></div>" +
       '<div class="pied__grille">' +
         "<div><h4>" + L("Boutique", "Shop") + "</h4>" + CATS.map(function (c) { return '<a href="boutique.html#' + c.id + '">' + T(c, "nom") + "</a>"; }).join("") + "</div>" +
         "<div><h4>Cinque Frati</h4>" + '<a href="maison.html">' + L("Notre histoire", "Our story") + '</a><a href="lieu.html">' + L("Le lieu", "The space") + '</a><a href="degustation.html">' + L("Le comptoir", "The counter") + '</a><a href="degustation.html#ateliers">' + L("Ateliers", "Workshops") + '</a><a href="degustation.html#club">' + L("Le Club", "The Club") + "</a></div>" +
-        "<div><h4>" + L("Nous trouver", "Visit us") + "</h4><p>Halles de Lyon Paul Bocuse<br>102 cours Lafayette<br>69003 Lyon</p></div>" +
-        "<div><h4>" + L("Horaires", "Hours") + "</h4><p>" + L("Mardi – samedi, 7 h – 19 h<br>Dimanche, 7 h – 13 h<br>Fermé le lundi", "Tuesday – Saturday, 7am – 7pm<br>Sunday, 7am – 1pm<br>Closed on Monday") + '</p><a href="https://www.instagram.com/" rel="noopener">Instagram ↗</a></div>' +
+        "<div><h4>" + L("Nous trouver", "Visit us") + "</h4><p class=\"pied__ligne\">" + picto("adresse") + "<span>Halles de Lyon Paul Bocuse<br>102 cours Lafayette<br>69003 Lyon</span></p></div>" +
+        "<div><h4>" + L("Horaires", "Hours") + "</h4><p class=\"pied__ligne\">" + picto("horaires") + "<span>" + L("Mardi – samedi, 7 h – 19 h<br>Dimanche, 7 h – 13 h<br>Fermé le lundi", "Tuesday – Saturday, 7am – 7pm<br>Sunday, 7am – 1pm<br>Closed on Monday") + "</span></p>" + '<div class="pied__reseaux">' + [["instagram", "Instagram"], ["facebook", "Facebook"], ["tiktok", "TikTok"], ["pinterest", "Pinterest"]].map(function (r) { return '<a href="#" aria-label="' + r[1] + '" data-demo="' + L("Projet fictif : pas de compte réel", "Fictional project: no real account") + '">' + picto(r[0]) + "</a>"; }).join("") + "</div>" + "</div>" +
       "</div>" +
       '<p class="pied__geant" aria-hidden="true">Cinque Frati<span>.</span></p><p style="margin:18px 0 0;color:var(--creme)">Cinque Frati · ' + L("La Corse, à table.", "Corsica, at the table.") + "</p>" + '' +
       '<div class="pied__bas"><span>© ' + new Date().getFullYear() + " Cinque Frati · " + L("Conception Baptiste Linet · Projet APD, avril 2025", "Design by Baptiste Linet · Detailed design project, April 2025") + "</span><span>" + MENTION_ALCOOL + "</span></div>" +

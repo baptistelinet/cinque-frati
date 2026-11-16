@@ -29,6 +29,11 @@ Les pages sont générées : modifier `sources/fr/<page>.html` ou `sources/en/<p
 3. Pour ajouter une photo produit : déposer `assets/img/produits/<slug>.jpg` (format 4:5) puis relancer le script.
 4. Pour illustrer un rayon de l'accueil : déposer `assets/img/rayons/<id-du-rayon>.jpg` (ex. `charcuterie.jpg`, format 3:4) puis relancer le script.
 
+## Pictogrammes et motifs
+
+- `assets/img/pictos.svg` : sprite des 25 pictogrammes (symboles `picto-NOM`). Usage : `<svg class="picto"><use href="assets/img/pictos.svg#picto-vins"/></svg>`. Couleur du trait via `color`, détail d'accent via `--picto-accent`, épaisseur via `--picto-trait`. Source : `/mnt/project-files/v2/images/pictos/`.
+- `assets/img/motifs/` : tuiles d'arches (fond de la box A Scatula, frise du pied de page) et sceaux.
+
 ## Identité
 
 Terracotta `#c05839` (RAL 2001) · Vert maquis `#8a9082` (RAL 7033) · Grège `#ddd6cc` (RAL 9002) · police Chillax (Fontshare).
