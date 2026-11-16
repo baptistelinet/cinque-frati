@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Déguster · Cinque Frati</title>
-<meta name="description" content="Le comptoir de dégustation sans réservation, le salon premium, les ateliers et le Club Cinque Frati, aux Halles de Lyon Paul Bocuse.">
+<meta name="description" content="La Corse, au comptoir. Le comptoir sans réservation, le salon pour 8 à 12 personnes, les ateliers et le Club Cinque Frati.">
 <meta property="og:title" content="Déguster · Cinque Frati">
-<meta property="og:description" content="Le comptoir de dégustation sans réservation, le salon premium, les ateliers et le Club Cinque Frati, aux Halles de Lyon Paul Bocuse.">
+<meta property="og:description" content="La Corse, au comptoir. Le comptoir sans réservation, le salon pour 8 à 12 personnes, les ateliers et le Club Cinque Frati.">
 <meta property="og:image" content="assets/img/stand-halles.jpg">
 <meta name="theme-color" content="#c05839">
 <link rel="alternate" hreflang="fr" href="degustation.html">
@@ -14,73 +14,83 @@
 <link rel="icon" href="assets/img/logo.png">
 <link rel="preconnect" href="https://api.fontshare.com">
 <link href="https://api.fontshare.com/v2/css?f[]=chillax@300,400,500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body data-page="degustation">
+<body data-page="degustation" data-heros>
 <main>
-  <section class="page-titre">
-    <div class="conteneur duo">
-      <div>
-        <span class="surtitre">Déguster</span>
-        <h1>On goûte avant d'acheter</h1>
-        <p class="chapo">Le comptoir est le cœur de la boutique. Une planche, un verre, et quelqu'un pour vous raconter qui a fait quoi, dans quel village.</p>
-        <div class="boutons"><a class="bouton" href="#reserver">Réserver le salon</a><a class="bouton bouton--ligne" href="#ateliers">Voir les ateliers</a></div>
-      </div>
-      <img class="arche" src="assets/img/degustation.jpg" alt="La zone de dégustation, banquettes vertes et tables en bois de hêtre" style="object-position:30% 50%">
+  <section class="page-titre page-titre--image">
+    <div class="cadre-fond"><img src="assets/img/degustation.jpg" alt="La zone de dégustation, banquettes vertes et tables en bois" fetchpriority="high"></div>
+    <div class="conteneur">
+      <span class="surtitre apparait">Déguster</span>
+      <h1><span class="ligne-masque"><span>La Corse,</span></span><span class="ligne-masque"><span><em>au comptoir.</em></span></span></h1>
+      <p class="chapo apparait">Trois façons de goûter. Sans réservation au comptoir, sur réservation au salon.</p>
     </div>
   </section>
 
-  <section class="section section--pierre" id="comptoir">
-    <div class="conteneur duo" style="align-items:start">
-      <div>
-        <span class="surtitre">U bancone · sans réservation</span>
-        <h2>La carte du comptoir</h2>
-        <p class="chapo">Servie toute la journée, aux heures d'ouverture des Halles. Le figatellu grillé, seulement de décembre à mars.</p>
-        <p class="mention-alcool" style="border:0;padding:0">L’abus d’alcool est dangereux pour la santé, à consommer avec modération.</p>
+  <section class="section" id="comptoir">
+    <div class="conteneur duo duo--haut">
+      <div class="collant__texte">
+        <span class="surtitre">Le comptoir · sans réservation</span>
+        <h2>Ici, le jambon se tranche à la minute.</h2>
+        <p class="chapo">Une planche, un verre, un conseil. Dix minutes ou une heure, c'est vous qui voyez.</p>
+        <p class="mention-alcool" style="border:0;padding:0">L'abus d'alcool est dangereux pour la santé, à consommer avec modération.</p>
       </div>
       <ul class="menu" data-carte="carte-du-comptoir"></ul>
     </div>
   </section>
 
   <section class="plein-cadre">
-    <img src="assets/img/premium.jpg" alt="Le salon premium, grande banquette blanche, poutres en bois et enduit naturel" loading="lazy">
+    <div class="cadre-fond"><img src="assets/img/premium.jpg" alt="Le salon premium, grande banquette, poutres en bois et enduit naturel" loading="lazy"></div>
     <div class="conteneur">
-      <span class="surtitre">A sala · le salon premium</span>
-      <h2>Huit à douze personnes,<br>une table, une île.</h2>
-      <p class="chapo">Dégustations commentées, soirées producteurs, privatisation pour un anniversaire ou un séminaire.</p>
+      <span class="surtitre">Le salon · 8 à 12 personnes, sur réservation</span>
+      <h2 style="max-width:12ch">La Corse, <em>entre vos mains.</em></h2>
+      <p class="chapo">Dégustations commentées, ateliers, soirées producteurs. Le salon se privatise aussi pour vos anniversaires et séminaires.</p>
     </div>
   </section>
 
   <section class="section" id="ateliers">
-    <div class="conteneur duo" style="align-items:start">
-      <div>
-        <span class="surtitre">Salon premium & ateliers</span>
-        <h2>Ateliers et rendez-vous</h2>
-        <p class="chapo">Sur réservation, dans le salon premium. Chaque mois, un producteur vient de Corse présenter son travail.</p>
-        <a class="bouton" href="#reserver">Réserver</a>
+    <div class="conteneur duo duo--haut">
+      <div class="collant__texte">
+        <span class="surtitre">Le salon & les ateliers</span>
+        <h2>Apprendre en goûtant.</h2>
+        <p class="chapo">Chaque mois, un producteur vient de Corse présenter son travail.</p>
+        <a class="bouton" href="#reserver">Réserver <span class="fleche">→</span></a>
       </div>
       <ul class="menu" data-carte="salon-premium-ateliers"></ul>
     </div>
   </section>
 
+  <section class="section section--pierre">
+    <div class="conteneur duo">
+      <div class="revele">
+        <span class="surtitre">Le voyage · 45 min</span>
+        <h2>De Calasima au Monte Cinto.</h2>
+        <p class="chapo">Un casque, quarante minutes, de Calasima au Monte Cinto. Puis la planche et un verre, pour revenir sur terre. 29 €.</p>
+      </div>
+      <figure class="cadre cadre--paysage parallaxe devoile" style="margin:0"><img src="assets/img/calasima.jpg" alt="Montagnes corses enneigées au-dessus d'un village" loading="lazy"></figure>
+    </div>
+  </section>
+
   <section class="section section--sauge" id="club">
     <div class="conteneur">
-      <span class="surtitre">Le Club Cinque Frati</span>
-      <h2>Soyez prévenu à l'arrivée du figatellu.</h2>
-      <div class="offres" style="margin-top:40px;color:var(--encre)">
-        <article class="offre"><span class="surtitre">Gratuit</span><h3>Le Club</h3><span class="prix">0 €</span><ul><li>Carte de fidélité : 1 € = 1 point, 100 points = 10 € offerts</li><li>La lettre de saison</li><li>Accès aux nouveautés</li></ul><a class="bouton bouton--ligne" href="#" data-demo="Inscription de démonstration : rien n’est enregistré.">S'inscrire</a></article>
-        <article class="offre offre--mise-en-avant"><span class="surtitre" style="color:#fff">89 € par an</span><h3>U Fratellu</h3><span class="prix">−10 % toute l'année</span><ul><li>Une dégustation offerte par trimestre</li><li>Avant-premières : figatellu, cuvées rares</li><li>Soirées producteurs en petit comité</li></ul><a class="bouton" href="#" data-demo="Adhésion de démonstration : rien n’est débité.">Devenir Fratellu</a></article>
-        <article class="offre"><span class="surtitre">Professionnels</span><h3>Tables & entreprises</h3><span class="prix">Sur devis</span><ul><li>Sélection pour restaurants et hôtels</li><li>Coffrets personnalisés dès 20 pièces</li><li>Privatisation du salon pour séminaires</li></ul><a class="bouton bouton--ligne" href="#reserver">Nous écrire</a></article>
+      <div class="entete-section"><div><span class="surtitre">Le Club</span><h2>La Corse, <em>en avant-première.</em></h2></div></div>
+      <div class="offres">
+        <article class="offre revele"><span class="surtitre">Gratuit</span><h3>Le Club</h3><span class="prix">0 €</span><ul><li>1 € = 1 point, 100 points = 10 € offerts</li><li>Les nouveautés avant tout le monde</li><li>La lettre de saison</li></ul><a class="bouton bouton--ligne" href="#" data-demo="Inscription de démonstration : rien n'est enregistré.">S'inscrire</a></article>
+        <article class="offre offre--mise-en-avant revele revele-retard-1"><span class="surtitre">89 € par an</span><h3><em>U Fratellu</em></h3><span class="prix">−10 % toute l'année</span><ul><li>Une dégustation par trimestre</li><li>Avant-premières : figatellu, cuvées rares</li><li>Les soirées producteurs en petit comité</li></ul><a class="bouton bouton--blanc" href="#" data-demo="Adhésion de démonstration : rien n'est débité.">Devenir Fratellu</a></article>
+        <article class="offre revele revele-retard-2"><span class="surtitre">Professionnels</span><h3>Tables & entreprises</h3><span class="prix">Sur devis</span><ul><li>Sélection pour restaurants et hôtels</li><li>Coffrets personnalisés dès 20 pièces</li><li>Le salon pour vos séminaires</li></ul><a class="bouton bouton--ligne" href="#reserver">Nous écrire</a></article>
       </div>
     </div>
   </section>
 
   <section class="section" id="reserver">
-    <div class="conteneur duo" style="align-items:start">
+    <div class="conteneur duo duo--haut">
       <div>
         <span class="surtitre">Réservation</span>
-        <h2>Réserver une table au salon</h2>
-        <p class="chapo">Indiquez la formule, la date et le nombre de convives. Nous confirmons sous 24 h.</p>
+        <h2>Réserver le salon.</h2>
+        <p class="chapo">La formule, la date, le nombre de convives. Nous confirmons sous 24 h.</p>
         <p class="produit__unite">Formulaire de démonstration : aucune réservation n'est enregistrée.</p>
       </div>
       <form class="formulaire" data-reservation>
@@ -94,19 +104,12 @@
         <label>Personnes<input type="number" min="1" max="12" value="2" required></label>
         <label>E-mail<input type="email" placeholder="vous@exemple.fr" required></label>
         <label class="plein">Un mot pour nous<textarea rows="3" placeholder="Anniversaire, allergies, envies…"></textarea></label>
-        <div class="plein"><button class="bouton" type="submit">Envoyer la demande</button></div>
+        <div class="plein"><button class="bouton" type="submit">Envoyer la demande <span class="fleche">→</span></button></div>
       </form>
     </div>
   </section>
 </main>
 <script src="assets/js/catalogue.js"></script>
 <script src="assets/js/app.js"></script>
-<script>
-  document.querySelector("[data-reservation]").addEventListener("submit", function (e) {
-    e.preventDefault(); e.target.reset();
-    var t = document.querySelector(".toast"); t.textContent = "Merci ! Demande fictive : rien n’a été envoyé."; t.classList.add("visible");
-    setTimeout(function () { t.classList.remove("visible"); }, 2800);
-  });
-</script>
 </body>
 </html>

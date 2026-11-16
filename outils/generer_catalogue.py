@@ -14,15 +14,15 @@ CIBLE = RACINE / "assets" / "js" / "catalogue.js"
 IMAGES = RACINE / "assets" / "img" / "produits"
 
 ACCROCHES = {
-    "charcuterie": "Porc nustrale élevé en liberté, châtaignes et glands, séché à l'air des montagnes. La charcuterie corse ne se presse pas.",
-    "fromages": "Lait cru de brebis et de chèvre, bergeries de montagne, caves naturelles. Des fromages qui ont du caractère, comme ceux qui les font.",
-    "vins-spiritueux": "Neuf AOC, des cépages qu'on ne trouve nulle part ailleurs : niellucciu, sciaccarellu, vermentinu.",
-    "huiles-miels-epicerie": "Olives tombées au filet, miels AOP de six saisons, châtaigne moulue à la meule : le garde-manger d'une maison corse.",
-    "epices-herbes-du-maquis": "Le maquis se respire avant de se goûter : myrte, nepita, immortelle, cueillis à la main.",
-    "douceurs": "Canistrelli, fiadone du matin, nougat au miel : la Corse côté goûter.",
-    "box-coffrets": "À offrir ou à s'offrir. Livraison à vélo dans Lyon, offerte dès 60 €.",
+    "charcuterie": "Porc nustrale, châtaignes, air des montagnes. Et du temps, beaucoup.",
+    "fromages": "Lait cru de brebis et de chèvre. Des caractères forts.",
+    "vins-spiritueux": "Niellucciu, sciaccarellu, vermentinu. Des cépages qu'on ne trouve qu'ici.",
+    "huiles-miels-epicerie": "L'olive, la châtaigne, le miel : les trois piliers du garde-manger corse.",
+    "epices-herbes-du-maquis": "Le maquis en pot. Cueilli à la main.",
+    "douceurs": "Canistrelli, fiadone, nougat. Pour le café, ou pour rien.",
+    "box-coffrets": "La Corse, chez vous. Une fois, ou tous les mois.",
 }
-VEDETTES = {"CF-104", "CF-201", "CF-301", "CF-704"}
+VEDETTES = {"CF-201", "CF-301", "CF-109", "CF-704"}
 DE_SAISON = {"CF-104", "CF-201", "CF-202", "CF-606", "CF-704"}
 RARES = {"CF-305", "CF-406", "CF-204"}
 COUPS_DE_COEUR = {"CF-109", "CF-205", "CF-403", "CF-604", "CF-702"}
@@ -62,7 +62,8 @@ def main():
         if c["slug"] in BOUTIQUE:
             ce = cats_en.get(c["slug"], [c["categorie"], ACCROCHES.get(c["slug"], "")])
             cats.append({"id": c["slug"], "nom": c["categorie"], "nomCorse": c["nom_corse"], "accroche": ACCROCHES.get(c["slug"], ""),
-                         "en": {"nom": ce[0], "accroche": ce[1]}})
+                         "en": {"nom": ce[0], "accroche": ce[1]},
+                         "image": next((f"assets/img/rayons/{c['slug']}.{x}" for x in ("webp", "jpg", "png") if (RACINE / "assets" / "img" / "rayons" / f"{c['slug']}.{x}").exists()), "")})
         items = []
         for p in c["produits"]:
             t = en.get(p["ref"])

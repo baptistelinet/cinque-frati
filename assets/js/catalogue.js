@@ -4,71 +4,78 @@ window.CATEGORIES = [
   "id": "charcuterie",
   "nom": "Charcuterie",
   "nomCorse": "A salumeria",
-  "accroche": "Porc nustrale élevé en liberté, châtaignes et glands, séché à l'air des montagnes. La charcuterie corse ne se presse pas.",
+  "accroche": "Porc nustrale, châtaignes, air des montagnes. Et du temps, beaucoup.",
   "en": {
    "nom": "Charcuterie",
-   "accroche": "Free-range nustrale pork raised on chestnuts and acorns, air-dried in the mountains. Corsican charcuterie is never rushed."
-  }
+   "accroche": "Nustrale pork, chestnuts, mountain air. And time, lots of it."
+  },
+  "image": ""
  },
  {
   "id": "fromages",
   "nom": "Fromages",
   "nomCorse": "I casgi",
-  "accroche": "Lait cru de brebis et de chèvre, bergeries de montagne, caves naturelles. Des fromages qui ont du caractère, comme ceux qui les font.",
+  "accroche": "Lait cru de brebis et de chèvre. Des caractères forts.",
   "en": {
    "nom": "Cheeses",
-   "accroche": "Raw ewe's and goat's milk, mountain sheepfolds, natural cellars. Cheeses with character, like the people who make them."
-  }
+   "accroche": "Raw ewe's and goat's milk. Strong characters."
+  },
+  "image": ""
  },
  {
   "id": "vins-spiritueux",
   "nom": "Vins & spiritueux",
   "nomCorse": "I vini",
-  "accroche": "Neuf AOC, des cépages qu'on ne trouve nulle part ailleurs : niellucciu, sciaccarellu, vermentinu.",
+  "accroche": "Niellucciu, sciaccarellu, vermentinu. Des cépages qu'on ne trouve qu'ici.",
   "en": {
    "nom": "Wines & spirits",
-   "accroche": "Nine appellations and grape varieties found nowhere else: niellucciu, sciaccarellu, vermentinu."
-  }
+   "accroche": "Niellucciu, sciaccarellu, vermentinu. Grapes you'll only find here."
+  },
+  "image": ""
  },
  {
   "id": "huiles-miels-epicerie",
   "nom": "Huiles, miels & épicerie",
   "nomCorse": "A dispensa",
-  "accroche": "Olives tombées au filet, miels AOP de six saisons, châtaigne moulue à la meule : le garde-manger d'une maison corse.",
+  "accroche": "L'olive, la châtaigne, le miel : les trois piliers du garde-manger corse.",
   "en": {
    "nom": "Oils, honeys & pantry",
-   "accroche": "Olives gathered in nets, AOP honeys from six seasons, stone-ground chestnut flour: the pantry of a Corsican home."
-  }
+   "accroche": "Olive, chestnut, honey: the three pillars of the Corsican pantry."
+  },
+  "image": ""
  },
  {
   "id": "epices-herbes-du-maquis",
   "nom": "Épices & herbes du maquis",
   "nomCorse": "E erbe",
-  "accroche": "Le maquis se respire avant de se goûter : myrte, nepita, immortelle, cueillis à la main.",
+  "accroche": "Le maquis en pot. Cueilli à la main.",
   "en": {
    "nom": "Spices & maquis herbs",
-   "accroche": "The maquis is something you smell before you taste: myrtle, nepita, immortelle, all hand-picked."
-  }
+   "accroche": "The maquis in a jar. Hand-picked."
+  },
+  "image": ""
  },
  {
   "id": "douceurs",
   "nom": "Douceurs",
   "nomCorse": "E cose dolce",
-  "accroche": "Canistrelli, fiadone du matin, nougat au miel : la Corse côté goûter.",
+  "accroche": "Canistrelli, fiadone, nougat. Pour le café, ou pour rien.",
   "en": {
    "nom": "Sweets",
-   "accroche": "Canistrelli, fiadone baked every morning, honey nougat: Corsica at teatime."
-  }
+   "accroche": "Canistrelli, fiadone, nougat. For coffee, or for no reason at all."
+  },
+  "image": ""
  },
  {
   "id": "box-coffrets",
   "nom": "Box & coffrets",
   "nomCorse": "E scatule",
-  "accroche": "À offrir ou à s'offrir. Livraison à vélo dans Lyon, offerte dès 60 €.",
+  "accroche": "La Corse, chez vous. Une fois, ou tous les mois.",
   "en": {
    "nom": "Boxes & gift sets",
-   "accroche": "To give or to keep. Bike delivery in Lyon, free from €60."
-  }
+   "accroche": "Corsica, at home. Once, or every month."
+  },
+  "image": ""
  }
 ];
 window.CATALOGUE = [
@@ -108,7 +115,7 @@ window.CATALOGUE = [
   ],
   "vedette": false,
   "alcool": false,
-  "image": "",
+  "image": "assets/img/produits/coppa-di-corsica-aop.jpg",
   "en": {
    "nom": "Coppa di Corsica AOP",
    "unite": "100 g",
@@ -130,7 +137,7 @@ window.CATALOGUE = [
   ],
   "vedette": false,
   "alcool": false,
-  "image": "",
+  "image": "assets/img/produits/lonzu-aop.jpg",
   "en": {
    "nom": "Lonzu AOP",
    "unite": "100 g",
@@ -150,9 +157,9 @@ window.CATALOGUE = [
   "badges": [
    "De saison"
   ],
-  "vedette": true,
+  "vedette": false,
   "alcool": false,
-  "image": "",
+  "image": "assets/img/produits/figatellu-de-calasima.jpg",
   "en": {
    "nom": "Figatellu from Calasima",
    "unite": "Piece, ~250 g",
@@ -253,7 +260,7 @@ window.CATALOGUE = [
    "AOP",
    "Coup de cœur"
   ],
-  "vedette": false,
+  "vedette": true,
   "alcool": false,
   "image": "",
   "en": {

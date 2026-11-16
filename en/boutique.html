@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Shop · Cinque Frati</title>
-<meta name="description" content="AOP charcuterie and cheeses, Corsican wines, oils, honeys, maquis herbs, sweets and gift boxes. Pick-up at Les Halles or delivery in Lyon.">
+<meta name="description" content="Corsica, to go. Sixty-four products: PDO charcuterie and cheeses, Corsican wines, oils, honeys, maquis herbs, sweets and gift boxes.">
 <meta property="og:title" content="Shop · Cinque Frati">
-<meta property="og:description" content="AOP charcuterie and cheeses, Corsican wines, oils, honeys, maquis herbs, sweets and gift boxes. Pick-up at Les Halles or delivery in Lyon.">
+<meta property="og:description" content="Corsica, to go. Sixty-four products: PDO charcuterie and cheeses, Corsican wines, oils, honeys, maquis herbs, sweets and gift boxes.">
 <meta property="og:image" content="../assets/img/stand-halles.jpg">
 <meta name="theme-color" content="#c05839">
 <link rel="alternate" hreflang="fr" href="../boutique.html">
@@ -14,34 +14,52 @@
 <link rel="icon" href="../assets/img/logo.png">
 <link rel="preconnect" href="https://api.fontshare.com">
 <link href="https://api.fontshare.com/v2/css?f[]=chillax@300,400,500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body data-page="boutique">
 <main>
   <section class="page-titre">
-    <div class="conteneur">
-      <span class="surtitre">The shop</span>
-      <h1>From the village to the table</h1>
-      <p class="chapo">A selection of Corsican producers, chosen one by one. Pick-up at Les Halles, bike delivery in Lyon or shipping anywhere in France.</p>
+    <div class="conteneur duo" style="align-items:end">
+      <div>
+        <span class="surtitre apparait">The shop</span>
+        <h1><span class="ligne-masque"><span>Corsica,</span></span><span class="ligne-masque"><span><em>to go.</em></span></span></h1>
+      </div>
+      <p class="chapo apparait">Sixty-four products, not one more. Each has a name, a village and someone behind it.</p>
     </div>
   </section>
-  <section style="padding-bottom:clamp(64px,10vw,140px)">
+  <div class="boutique-barre">
     <div class="conteneur">
-      <div class="boutique-outils">
-        <div class="filtres" data-filtres role="group" aria-label="Filter by aisle"></div>
-        <label class="visuellement-cache" for="recherche">Search for a product</label>
-        <input class="recherche" id="recherche" type="search" placeholder="Search: brocciu, myrtle, AOP…" data-recherche>
-      </div>
-      <p class="categorie-intro" data-intro></p>
+      <div class="filtres" data-filtres role="group" aria-label="Filter by aisle"></div>
+      <label class="visuellement-cache" for="recherche">Search for a product</label>
+      <input class="recherche" id="recherche" type="search" placeholder="Search: brocciu, myrtle, AOP…" data-recherche>
+    </div>
+  </div>
+  <section style="padding-bottom:clamp(80px,10vw,140px)">
+    <div class="conteneur">
+      <div class="categorie-intro" data-intro></div>
       <div class="grille-produits" data-boutique></div>
     </div>
   </section>
-  <section class="section section--pierre">
+  <section class="section section--terracotta">
+    <div class="conteneur duo">
+      <div class="revele">
+        <span class="surtitre">The box</span>
+        <h2><em>A Scatula.</em> Corsica, every month.</h2>
+        <p class="chapo">Five to seven seasonal products chosen by Baptiste, a producer card and a recipe. No commitment. From €39 a month.</p>
+        <button class="bouton bouton--blanc" type="button" data-ajouter="box-mensuelle-a-scatula-abonnement">Subscribe <span class="fleche">→</span></button>
+      </div>
+      <figure class="cadre cadre--arche cadre--portrait parallaxe devoile" style="margin:0;max-width:440px;justify-self:end;width:100%"><img src="../assets/img/presentoirs.jpg" alt="Shelves stocked with Corsican products under an arch" loading="lazy"></figure>
+    </div>
+  </section>
+  <section class="section">
     <div class="conteneur piliers">
-      <div class="pilier"><span class="numero">Pick-up</span><h3>At Les Halles, within 2 hours</h3><p>Order online, we prepare it and slice to order.</p></div>
-      <div class="pilier"><span class="numero">Lyon</span><h3>Bike delivery</h3><p>Free from €60 in Lyon and Villeurbanne.</p></div>
-      <div class="pilier"><span class="numero">France</span><h3>Shipping €9.90</h3><p>Free from €120, insulated packaging.</p></div>
-      <div class="pilier"><span class="numero">Business</span><h3>Corporate gift boxes</h3><p>Personalised from 20 boxes, logo engraving.</p></div>
+      <div class="pilier revele"><span class="numero">Pick-up</span><h3>At Les Halles, within 2 hours.</h3><p>Order online, we prepare it and slice to order.</p></div>
+      <div class="pilier revele revele-retard-1"><span class="numero">Lyon</span><h3>Bike delivery.</h3><p>Free from €60 in Lyon and Villeurbanne.</p></div>
+      <div class="pilier revele revele-retard-2"><span class="numero">France</span><h3>Shipping €9.90.</h3><p>Free from €120, insulated packaging.</p></div>
+      <div class="pilier revele revele-retard-3"><span class="numero">Business</span><h3>Bespoke gift boxes.</h3><p>From 20 boxes, logo engraving.</p></div>
     </div>
   </section>
 </main>

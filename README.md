@@ -1,5 +1,7 @@
 # Cinque Frati · La Corse, à table.
 
+Version 2 : direction artistique « La Corse en épure » (Chillax, Inter, Instrument Serif ; arches ; grandes images, animations au défilement).
+
 Site vitrine et boutique de démonstration de **Cinque Frati**, épicerie fine corse et comptoir de dégustation aux Halles de Lyon Paul Bocuse.
 
 > Projet **fictif** réalisé par Baptiste Linet dans le cadre d'un portfolio d'architecture d'intérieur (phase APD, 29/04/2025). Aucune vente réelle : le panier et les formulaires sont simulés.
@@ -24,7 +26,8 @@ Les pages sont générées : modifier `sources/fr/<page>.html` ou `sources/en/<p
 
 1. Modifier `donnees/catalogue.json` (français) et `donnees/catalogue-en.json` (anglais, par référence `CF-xxx`).
 2. Lancer `python3 outils/generer_catalogue.py` (régénère `assets/js/catalogue.js`).
-3. Pour ajouter une photo produit : déposer `assets/img/produits/<slug>.jpg` puis relancer le script.
+3. Pour ajouter une photo produit : déposer `assets/img/produits/<slug>.jpg` (format 4:5) puis relancer le script.
+4. Pour illustrer un rayon de l'accueil : déposer `assets/img/rayons/<id-du-rayon>.jpg` (ex. `charcuterie.jpg`, format 3:4) puis relancer le script.
 
 ## Identité
 

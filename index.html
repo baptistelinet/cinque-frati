@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cinque Frati · La Corse, à table.</title>
-<meta name="description" content="Épicerie fine corse et dégustation aux Halles de Lyon Paul Bocuse. Charcuteries et fromages AOP, vins de l'île, coffrets et ateliers.">
+<meta name="description" content="Épicerie fine corse et dégustation aux Halles de Lyon Paul Bocuse. Des produits d'altitude, choisis un par un, à goûter avant de les emporter.">
 <meta property="og:title" content="Cinque Frati · La Corse, à table.">
-<meta property="og:description" content="Épicerie fine corse et dégustation aux Halles de Lyon Paul Bocuse. Charcuteries et fromages AOP, vins de l'île, coffrets et ateliers.">
+<meta property="og:description" content="Épicerie fine corse et dégustation aux Halles de Lyon Paul Bocuse. Des produits d'altitude, choisis un par un, à goûter avant de les emporter.">
 <meta property="og:image" content="assets/img/stand-halles.jpg">
 <meta name="theme-color" content="#c05839">
 <link rel="alternate" hreflang="fr" href="index.html">
@@ -14,98 +14,112 @@
 <link rel="icon" href="assets/img/logo.png">
 <link rel="preconnect" href="https://api.fontshare.com">
 <link href="https://api.fontshare.com/v2/css?f[]=chillax@300,400,500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body data-page="accueil">
+<body data-page="accueil" data-heros>
 <main>
-  <section class="heros">
-    <div class="conteneur heros__grille">
-      <div>
-        <span class="surtitre">Épicerie fine corse & dégustation</span>
-        <h1>La Corse, <em>à table.</em></h1>
-        <p class="chapo">Épicerie fine corse et comptoir de dégustation, au cœur des Halles de Lyon Paul Bocuse.</p>
+  <section class="heros-plein">
+    <div class="heros-plein__image"><img src="assets/img/stand-halles.jpg" alt="Le stand Cinque Frati sous la halle, vitrine en arc et parement de pierre" fetchpriority="high"></div>
+    <div class="conteneur">
+      <span class="surtitre apparait">Épicerie fine corse · Halles de Lyon Paul Bocuse</span>
+      <h1><span class="ligne-masque"><span>La Corse,</span></span><span class="ligne-masque"><span><em>à table.</em></span></span></h1>
+      <div class="heros-plein__pied apparait">
+        <p>Des produits d'altitude, choisis un par un, à goûter avant de les emporter.</p>
         <div class="boutons">
-          <a class="bouton" href="boutique.html">Découvrir la boutique</a>
-          <a class="bouton bouton--ligne" href="degustation.html#reserver">Réserver une dégustation</a>
+          <a class="bouton" href="boutique.html">Découvrir la boutique <span class="fleche">→</span></a>
+          <a class="bouton bouton--clair" href="degustation.html#reserver">Réserver une dégustation</a>
         </div>
-      </div>
-      <div class="heros__visuel">
-        <img src="assets/img/stand-halles.jpg" alt="Le stand Cinque Frati sous la halle, vitrine réfrigérée en arc et parement de pierre" fetchpriority="high">
-        <div class="heros__badge"><strong>Halles Paul Bocuse</strong>102 cours Lafayette, Lyon 3e</div>
+        <a class="defiler" href="#manifeste"><i></i>Défiler</a>
       </div>
     </div>
   </section>
 
   <div class="bandeau" aria-hidden="true">
     <div class="bandeau__piste">
-      <span>Prisuttu 30 mois</span><span>Brocciu de novembre</span><span>Patrimonio</span><span>Miel de maquis</span><span>Canistrelli</span><span>Figatellu de Calasima</span><span>Huile d'olive AOP</span><span>Liqueur de myrte</span>
-      <span>Prisuttu 30 mois</span><span>Brocciu de novembre</span><span>Patrimonio</span><span>Miel de maquis</span><span>Canistrelli</span><span>Figatellu de Calasima</span><span>Huile d'olive AOP</span><span>Liqueur de myrte</span>
+      <span>Goûtez d'abord. Choisissez ensuite.</span><span>30 mois. Pas un de moins.</span><span>Une île, neuf AOC, un seul comptoir.</span><span>On vient à un. On repart à cinq.</span>
+      <span>Goûtez d'abord. Choisissez ensuite.</span><span>30 mois. Pas un de moins.</span><span>Une île, neuf AOC, un seul comptoir.</span><span>On vient à un. On repart à cinq.</span>
     </div>
   </div>
 
-  <section class="section">
-    <div class="conteneur duo">
-      <img class="arche revele" src="assets/img/cinque-frati.jpg" alt="Les sommets enneigés des Cinque Frati au-dessus du clocher de Calasima" style="object-position:62% 50%" loading="lazy">
-      <div class="revele">
+  <section class="section" id="manifeste">
+    <div class="conteneur collant">
+      <div class="collant__texte">
         <span class="surtitre">Le manifeste</span>
-        <p class="citation">Cinque Frati, ce sont cinq sommets au-dessus de Calasima, mon village. Cinq frères, disent les anciens. Ici, on vous reçoit comme à leur table.</p>
-        <p style="margin-top:24px">Baptiste, fondateur</p>
-        <a class="bouton bouton--ligne" href="maison.html">Notre histoire</a>
+        <p class="manifeste">Au-dessus de Calasima, à 1 100 mètres, cinq sommets se tiennent côte à côte. On les appelle les Cinque Frati, les cinq frères. Nous avons ramené leur esprit aux Halles de Lyon.</p>
+        <p class="chapo" style="margin-top:32px">Des produits rares, choisis un par un. Des gens qui savent les raconter. Un comptoir pour les goûter avant de les emporter. La Corse sans carte postale. Juste ce qu'elle a de meilleur.</p>
+        <a class="lien-fleche" href="maison.html">Notre histoire <span>→</span></a>
+      </div>
+      <div class="collant__images">
+        <figure class="cadre cadre--arche cadre--portrait parallaxe devoile" style="margin:0"><img src="assets/img/cinque-frati.jpg" alt="La crête des Cinque Frati au-dessus du clocher de Calasima" style="object-position:62% 50%" loading="lazy"></figure>
+        <figure class="cadre cadre--paysage parallaxe devoile" style="margin:0"><img src="assets/img/calasima.jpg" alt="Le village de Calasima accroché à la montagne" loading="lazy"></figure>
       </div>
     </div>
   </section>
 
   <section class="section section--pierre">
+    <div class="conteneur">
+      <div class="chiffres">
+        <div class="revele"><strong><span data-compte="1100">1 100</span> m</strong>l'altitude de Calasima, d'où tout part</div>
+        <div class="revele revele-retard-1"><strong><span data-compte="30">30</span> mois</strong>d'affinage pour notre prisuttu</div>
+        <div class="revele revele-retard-2"><strong><span data-compte="9">9</span> AOC</strong>de vins corses à la carte</div>
+        <div class="revele revele-retard-3"><strong><span data-compte="5">5</span> frères</strong>et une seule table</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
     <div class="conteneur">
       <div class="piliers">
-        <div class="pilier revele"><span class="numero">01</span><h3>Choisis un par un</h3><p>Chaque produit a un producteur, un village et une histoire. Les AOP sont nommées, les bergeries visitées.</p></div>
-        <div class="pilier revele"><span class="numero">02</span><h3>Goûtés avant d'être achetés</h3><p>Le comptoir de dégustation est le cœur de la boutique. On coupe, on fait goûter, on raconte.</p></div>
-        <div class="pilier revele"><span class="numero">03</span><h3>Partagés</h3><p>Ateliers, soirées producteurs et salon privatisable : on vient seul, on repart avec des amis.</p></div>
+        <div class="pilier revele"><span class="numero">01</span><h3>Rare.</h3><p>Petites séries, AOP, cuvées confidentielles. Ce qui est là aujourd'hui ne le sera peut-être plus demain.</p></div>
+        <div class="pilier revele revele-retard-1"><span class="numero">02</span><h3>Goûté.</h3><p>Rien ne s'achète sans passer par le comptoir. On tranche, on verse, vous décidez.</p></div>
+        <div class="pilier revele revele-retard-2"><span class="numero">03</span><h3>Partagé.</h3><p>Un salon, des ateliers, des soirées producteurs. On vient à un, on repart à cinq.</p></div>
       </div>
     </div>
   </section>
 
-  <section class="section">
-    <div class="conteneur">
-      <div class="entete-section">
-        <div><span class="surtitre">La boutique</span><h2>Sept rayons, une île</h2></div>
-        <a class="bouton bouton--ligne" href="boutique.html">Tout le catalogue</a>
-      </div>
-      <div class="arches" data-arches></div>
+  <section class="section" style="padding-top:0">
+    <div class="conteneur entete-section">
+      <div><span class="surtitre">La boutique</span><h2>La Corse, <em>à emporter.</em></h2></div>
+      <div class="rail-outils" data-rail-pour="rayons"><button type="button" data-sens="prec" aria-label="Précédent">←</button><button type="button" data-sens="suiv" aria-label="Suivant">→</button></div>
     </div>
+    <div class="rail" id="rayons" data-rayons></div>
   </section>
 
   <section class="section section--pierre">
     <div class="conteneur">
       <div class="entete-section">
-        <div><span class="surtitre">Sélection de novembre</span><h2>Le moment du figatellu</h2></div>
-        <p class="chapo" style="margin:0">Le brocciu revient, le figatellu fume : la saison d'hiver commence.</p>
+        <div><span class="surtitre">En ce moment</span><h2>Le <em>brocciu</em> est arrivé.</h2></div>
+        <p class="chapo" style="margin:0">Le figatellu suit en décembre.</p>
       </div>
       <div class="grille-produits" data-vedettes></div>
     </div>
   </section>
 
   <section class="plein-cadre">
-    <img src="assets/img/degustation.jpg" alt="Le comptoir de dégustation, banquettes vertes et tables en bois sous les arches" loading="lazy">
+    <div class="cadre-fond"><img src="assets/img/degustation.jpg" alt="Le comptoir de dégustation, banquettes vertes et tables en bois" loading="lazy"></div>
     <div class="conteneur">
-      <span class="surtitre">U bancone · le comptoir</span>
-      <h2>La planche des Cinque Frati,<br>24 € pour deux.</h2>
-      <p class="chapo">Trois charcuteries AOP, trois fromages, salamu et canistrelli salés. Sans réservation.</p>
-      <a class="bouton bouton--clair" href="degustation.html">Voir la carte du comptoir</a>
+      <span class="surtitre">Le comptoir</span>
+      <h2 style="max-width:14ch">Goûtez d'abord. Choisissez ensuite.</h2>
+      <p class="chapo">La planche des Cinque Frati : trois charcuteries AOP, trois fromages, et l'avis de celui qui les a choisis. 24 € pour deux.</p>
+      <a class="bouton bouton--clair" href="degustation.html">Voir la carte du comptoir <span class="fleche">→</span></a>
     </div>
   </section>
 
   <section class="section">
     <div class="conteneur">
       <div class="entete-section">
-        <div><span class="surtitre">A sala · prochains ateliers</span><h2>Apprendre en goûtant</h2></div>
-        <a class="bouton bouton--ligne" href="degustation.html#ateliers">Tous les ateliers</a>
+        <div><span class="surtitre">Le salon · prochains rendez-vous</span><h2>La Corse, <em>entre vos mains.</em></h2></div>
+        <a class="lien-fleche" href="degustation.html#ateliers">Tous les ateliers <span>→</span></a>
       </div>
-      <div class="offres">
-        <article class="offre revele"><span class="surtitre">Sam. 29 nov. · 1 h</span><h3>Les trois AOP</h3><p>Prisuttu, coppa, lonzu : apprendre à les reconnaître, avec trois vins.</p><span class="prix">35 € / pers.</span><a class="bouton bouton--ligne" href="degustation.html#reserver">Réserver</a></article>
-        <article class="offre offre--mise-en-avant revele"><span class="surtitre" style="color:#fff">Ven. 5 déc. · 2 h 30</span><h3>Soirée producteur</h3><p>Une bergère du Niolu vient présenter son travail, en petit comité, dîner de produits.</p><span class="prix">75 € / pers.</span><a class="bouton" href="degustation.html#reserver">Réserver</a></article>
-        <article class="offre revele"><span class="surtitre">Sam. 13 déc. · 2 h</span><h3>Fiadone & canistrelli</h3><p>On pâtisse, on goûte, on repart avec sa recette et ses biscuits.</p><span class="prix">55 € / pers.</span><a class="bouton bouton--ligne" href="degustation.html#reserver">Réserver</a></article>
-      </div>
+      <ul class="liste-index">
+        <li class="revele"><a href="degustation.html#reserver" data-image="assets/img/premium.jpg"><span class="date">Sam. 29 nov. · 1 h</span><span class="titre">Les trois AOP<small>Prisuttu, coppa, lonzu, avec trois vins.</small></span><span class="prix">35 €</span></a></li>
+        <li class="revele"><a href="degustation.html#reserver" data-image="assets/img/degustation.jpg"><span class="date">Ven. 5 déc. · 2 h 30</span><span class="titre">Soirée producteur<small>Une bergère du Niolu, en petit comité.</small></span><span class="prix">75 €</span></a></li>
+        <li class="revele"><a href="degustation.html#reserver" data-image="assets/img/presentoirs.jpg"><span class="date">Sam. 13 déc. · 2 h</span><span class="titre">Fiadone &amp; canistrelli<small>On pâtisse, on goûte, on repart avec sa recette.</small></span><span class="prix">55 €</span></a></li>
+        <li class="revele"><a href="degustation.html#reserver" data-image="assets/img/premium.jpg"><span class="date">Sam. 20 déc. · 1 h 30</span><span class="titre">Fromages &amp; miels<small>Cinq brebis, cinq miels AOP.</small></span><span class="prix">42 €</span></a></li>
+      </ul>
     </div>
   </section>
 
@@ -113,21 +127,21 @@
     <div class="conteneur duo duo--inverse">
       <div class="revele">
         <span class="surtitre">Le lieu</span>
-        <h2>Pierre, bois brut et arches</h2>
-        <p class="chapo">Un stand de 181 m² pensé comme un village : le présentoir sous les arches, le comptoir au centre, le salon premium au fond. Une immersion portée par les matériaux, sans superflu.</p>
-        <a class="bouton bouton--clair" href="lieu.html">Découvrir l'architecture</a>
+        <h2>Un stand pensé comme un village.</h2>
+        <p class="chapo">Pierre, châtaignier, béton ciré et arches. 181 m² au cœur des Halles, dessinés pour qu'on s'y attarde.</p>
+        <a class="bouton bouton--clair" href="lieu.html">Découvrir le projet <span class="fleche">→</span></a>
       </div>
-      <img class="revele" src="assets/img/presentoirs.jpg" alt="Les présentoirs sous les arches de pierre, étagères en bois brut" loading="lazy" style="aspect-ratio:4/3">
+      <figure class="cadre cadre--arche cadre--portrait parallaxe devoile" style="margin:0"><img src="assets/img/presentoirs.jpg" alt="Les présentoirs sous les arches de pierre, étagères en bois brut" loading="lazy"></figure>
     </div>
   </section>
 
   <section class="section" id="visite">
     <div class="conteneur">
-      <div class="entete-section"><div><span class="surtitre">Nous trouver</span><h2>Aux Halles de Lyon Paul Bocuse</h2></div></div>
+      <div class="entete-section"><div><span class="surtitre">Nous trouver</span><h2>Halles de Lyon Paul Bocuse.</h2></div></div>
       <div class="infos">
-        <div><h3>Adresse</h3><p>Halles de Lyon Paul Bocuse<br>102 cours Lafayette<br>69003 Lyon</p><p>Métro B Part-Dieu · Tram T1 Halles Paul Bocuse · Parking des Halles</p></div>
-        <div><h3>Horaires</h3><ul class="horaires"><li><span>Lundi</span><span>Fermé</span></li><li><span>Mardi – samedi</span><span>7 h – 19 h</span></li><li><span>Dimanche</span><span>7 h – 13 h</span></li></ul><p style="margin-top:12px;font-size:.85rem;color:var(--encre-douce)">Horaires indicatifs. Ouvert le dimanche après-midi en décembre.</p></div>
-        <div><h3>On vous répond</h3><p>En français, anglais, italien et corse.</p><p>Livraison à vélo dans Lyon, offerte dès 60 €. Expédition France 9,90 €, offerte dès 120 €.</p><a class="bouton" href="degustation.html#club">Rejoindre le Club</a></div>
+        <div class="revele"><h3>Adresse</h3><p>102 cours Lafayette<br>69003 Lyon</p><p>Métro B Part-Dieu · Tram T1 Halles Paul Bocuse · Parking des Halles</p></div>
+        <div class="revele revele-retard-1"><h3>Horaires</h3><ul class="horaires"><li><span>Lundi</span><span>Fermé</span></li><li><span>Mardi – samedi</span><span>7 h – 19 h</span></li><li><span>Dimanche</span><span>7 h – 13 h</span></li></ul></div>
+        <div class="revele revele-retard-2"><h3>Livraison</h3><p>À vélo dans Lyon, offerte dès 60 €. Expédition en France 9,90 €, offerte dès 120 €.</p><p>On vous répond en français, anglais, italien et corse.</p></div>
       </div>
     </div>
   </section>

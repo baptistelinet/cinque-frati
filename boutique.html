@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>La boutique · Cinque Frati</title>
-<meta name="description" content="Charcuteries et fromages AOP, vins corses, huiles, miels, herbes du maquis, douceurs et coffrets. Retrait aux Halles ou livraison à Lyon.">
+<meta name="description" content="La Corse, à emporter. Soixante-quatre références : charcuteries et fromages AOP, vins corses, huiles, miels, herbes du maquis, douceurs et coffrets.">
 <meta property="og:title" content="La boutique · Cinque Frati">
-<meta property="og:description" content="Charcuteries et fromages AOP, vins corses, huiles, miels, herbes du maquis, douceurs et coffrets. Retrait aux Halles ou livraison à Lyon.">
+<meta property="og:description" content="La Corse, à emporter. Soixante-quatre références : charcuteries et fromages AOP, vins corses, huiles, miels, herbes du maquis, douceurs et coffrets.">
 <meta property="og:image" content="assets/img/stand-halles.jpg">
 <meta name="theme-color" content="#c05839">
 <link rel="alternate" hreflang="fr" href="boutique.html">
@@ -14,34 +14,52 @@
 <link rel="icon" href="assets/img/logo.png">
 <link rel="preconnect" href="https://api.fontshare.com">
 <link href="https://api.fontshare.com/v2/css?f[]=chillax@300,400,500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body data-page="boutique">
 <main>
   <section class="page-titre">
-    <div class="conteneur">
-      <span class="surtitre">La boutique</span>
-      <h1>Du village à la table</h1>
-      <p class="chapo">Une sélection de producteurs corses, choisis un par un. Retrait aux Halles, livraison à vélo dans Lyon ou expédition partout en France.</p>
+    <div class="conteneur duo" style="align-items:end">
+      <div>
+        <span class="surtitre apparait">La boutique</span>
+        <h1><span class="ligne-masque"><span>La Corse,</span></span><span class="ligne-masque"><span><em>à emporter.</em></span></span></h1>
+      </div>
+      <p class="chapo apparait">Soixante-quatre références, pas une de plus. Chacune a un nom, un village et quelqu'un derrière.</p>
     </div>
   </section>
-  <section style="padding-bottom:clamp(64px,10vw,140px)">
+  <div class="boutique-barre">
     <div class="conteneur">
-      <div class="boutique-outils">
-        <div class="filtres" data-filtres role="group" aria-label="Filtrer par rayon"></div>
-        <label class="visuellement-cache" for="recherche">Rechercher un produit</label>
-        <input class="recherche" id="recherche" type="search" placeholder="Rechercher : brocciu, myrte, AOP…" data-recherche>
-      </div>
-      <p class="categorie-intro" data-intro></p>
+      <div class="filtres" data-filtres role="group" aria-label="Filtrer par rayon"></div>
+      <label class="visuellement-cache" for="recherche">Rechercher un produit</label>
+      <input class="recherche" id="recherche" type="search" placeholder="Rechercher : brocciu, myrte, AOP…" data-recherche>
+    </div>
+  </div>
+  <section style="padding-bottom:clamp(80px,10vw,140px)">
+    <div class="conteneur">
+      <div class="categorie-intro" data-intro></div>
       <div class="grille-produits" data-boutique></div>
     </div>
   </section>
-  <section class="section section--pierre">
+  <section class="section section--terracotta">
+    <div class="conteneur duo">
+      <div class="revele">
+        <span class="surtitre">La box</span>
+        <h2><em>A Scatula.</em> La Corse, tous les mois.</h2>
+        <p class="chapo">Cinq à sept produits de saison, choisis par Baptiste, une fiche producteur et une recette. Sans engagement. Dès 39 € par mois.</p>
+        <button class="bouton bouton--blanc" type="button" data-ajouter="box-mensuelle-a-scatula-abonnement">S'abonner <span class="fleche">→</span></button>
+      </div>
+      <figure class="cadre cadre--arche cadre--portrait parallaxe devoile" style="margin:0;max-width:440px;justify-self:end;width:100%"><img src="assets/img/presentoirs.jpg" alt="Étagères garnies de produits corses sous une arche" loading="lazy"></figure>
+    </div>
+  </section>
+  <section class="section">
     <div class="conteneur piliers">
-      <div class="pilier"><span class="numero">Retrait</span><h3>Aux Halles, sous 2 h</h3><p>Commandez, on prépare et on tranche minute.</p></div>
-      <div class="pilier"><span class="numero">Lyon</span><h3>Livraison à vélo</h3><p>Offerte dès 60 € dans Lyon et Villeurbanne.</p></div>
-      <div class="pilier"><span class="numero">France</span><h3>Expédition 9,90 €</h3><p>Offerte dès 120 €, emballage isotherme.</p></div>
-      <div class="pilier"><span class="numero">Pros</span><h3>Coffrets d'entreprise</h3><p>Personnalisés dès 20 pièces, gravure du logo.</p></div>
+      <div class="pilier revele"><span class="numero">Retrait</span><h3>Aux Halles, sous 2 h.</h3><p>Commandez, on prépare et on tranche à la minute.</p></div>
+      <div class="pilier revele revele-retard-1"><span class="numero">Lyon</span><h3>Livraison à vélo.</h3><p>Offerte dès 60 € dans Lyon et Villeurbanne.</p></div>
+      <div class="pilier revele revele-retard-2"><span class="numero">France</span><h3>Expédition 9,90 €.</h3><p>Offerte dès 120 €, emballage isotherme.</p></div>
+      <div class="pilier revele revele-retard-3"><span class="numero">Entreprises</span><h3>Coffrets sur mesure.</h3><p>Dès 20 pièces, gravure du logo.</p></div>
     </div>
   </section>
 </main>

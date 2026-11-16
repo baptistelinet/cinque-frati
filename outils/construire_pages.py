@@ -19,7 +19,7 @@ for langue, (base, sortie, vers_fr, vers_en) in LANGUES.items():
         desc = re.search(r"<!--DESC: (.*?)-->", s).group(1).replace('"', "&quot;")
         corps = re.sub(r"<!--(TITRE|DESC): .*?-->\n", "", s)
         if base:
-            corps = re.sub(r'(src|href)="assets/', r'\1="' + base + "assets/", corps)
+            corps = re.sub(r'(src|href|data-image)="assets/', r'\1="' + base + "assets/", corps)
         tete = (TETE.replace("__LANG__", langue).replace("__TITRE__", titre).replace("__DESC__", desc)
                 .replace("__BASE__", base).replace("__VERS_FR__", vers_fr).replace("__VERS_EN__", vers_en)
                 .replace("__FICHIER__", src.name))
