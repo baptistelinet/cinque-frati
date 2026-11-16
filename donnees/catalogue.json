@@ -1,0 +1,683 @@
+[
+  {
+    "categorie": "Charcuterie",
+    "nom_corse": "A salumeria",
+    "slug": "charcuterie",
+    "produits": [
+      {
+        "ref": "CF-101",
+        "nom": "Prisuttu AOP 30 mois",
+        "slug": "prisuttu-aop-30-mois",
+        "description": "Jambon sec de porc nustrale, affiné 30 mois dans une cave de Haute-Corse. Gras fondant, notes de noisette et de sous-bois. Tranché minute.",
+        "format": "100 g",
+        "prix": "14,50 €"
+      },
+      {
+        "ref": "CF-102",
+        "nom": "Coppa di Corsica AOP",
+        "slug": "coppa-di-corsica-aop",
+        "description": "Échine roulée, salée au sel sec puis séchée 6 mois. Chair rouge rubis, poivre et douceur.",
+        "format": "100 g",
+        "prix": "8,90 €"
+      },
+      {
+        "ref": "CF-103",
+        "nom": "Lonzu AOP",
+        "slug": "lonzu-aop",
+        "description": "Filet entier enrobé de poivre et de piment doux, maigre et parfumé. Le plus élégant des trois AOP.",
+        "format": "100 g",
+        "prix": "9,50 €"
+      },
+      {
+        "ref": "CF-104",
+        "nom": "Figatellu de Calasima",
+        "slug": "figatellu-de-calasima",
+        "description": "Saucisse de foie fumée au bois de châtaignier, à griller au feu de bois. Uniquement de décembre à mars.",
+        "format": "Pièce ~250 g",
+        "prix": "9,00 €"
+      },
+      {
+        "ref": "CF-105",
+        "nom": "Salamu nustrale",
+        "slug": "salamu-nustrale",
+        "description": "Saucisson de porc nustrale au vin rouge et à l'ail, séché 4 mois.",
+        "format": "Pièce ~300 g",
+        "prix": "16,00 €"
+      },
+      {
+        "ref": "CF-106",
+        "nom": "Panzetta affinée",
+        "slug": "panzetta-affinee",
+        "description": "Poitrine roulée et poivrée, à trancher fin pour l'apéritif ou à fondre dans une soupe.",
+        "format": "100 g",
+        "prix": "5,90 €"
+      },
+      {
+        "ref": "CF-107",
+        "nom": "Salciccia de sanglier",
+        "slug": "salciccia-de-sanglier",
+        "description": "Saucisse sèche de sanglier corse au myrte. Sauvage, intense.",
+        "format": "Pièce ~200 g",
+        "prix": "13,50 €"
+      },
+      {
+        "ref": "CF-108",
+        "nom": "Terrine de sanglier à la myrte",
+        "slug": "terrine-de-sanglier-a-la-myrte",
+        "description": "Terrine artisanale, sanglier du maquis et baies de myrte.",
+        "format": "Bocal 180 g",
+        "prix": "9,80 €"
+      },
+      {
+        "ref": "CF-109",
+        "nom": "Trilogie AOP",
+        "slug": "trilogie-aop",
+        "description": "Prisuttu, coppa et lonzu tranchés, 50 g de chaque, sur papier ciré au logo.",
+        "format": "150 g",
+        "prix": "17,50 €"
+      }
+    ]
+  },
+  {
+    "categorie": "Fromages",
+    "nom_corse": "I casgi",
+    "slug": "fromages",
+    "produits": [
+      {
+        "ref": "CF-201",
+        "nom": "Brocciu AOP frais",
+        "slug": "brocciu-aop-frais",
+        "description": "Fromage frais de lactosérum de brebis, moulé à la louche. Doux, presque sucré. De novembre à juin.",
+        "format": "Faisselle ~500 g",
+        "prix": "12,00 €"
+      },
+      {
+        "ref": "CF-202",
+        "nom": "Brocciu passu",
+        "slug": "brocciu-passu",
+        "description": "Brocciu salé et affiné un mois, plus ferme, à râper sur les pâtes.",
+        "format": "~250 g",
+        "prix": "9,50 €"
+      },
+      {
+        "ref": "CF-203",
+        "nom": "Tomme de brebis du Niolu",
+        "slug": "tomme-de-brebis-du-niolu",
+        "description": "Pâte pressée affinée 6 mois en bergerie d'altitude, Bergerie Santa Lucia. Notes de foin et de noisette.",
+        "format": "200 g",
+        "prix": "9,90 €"
+      },
+      {
+        "ref": "CF-204",
+        "nom": "Niulincu affiné",
+        "slug": "niulincu-affine",
+        "description": "Pâte molle à croûte lavée de la vallée du Niolu, puissante et crémeuse. Pour les connaisseurs.",
+        "format": "Pièce ~400 g",
+        "prix": "15,50 €"
+      },
+      {
+        "ref": "CF-205",
+        "nom": "Fleur du maquis",
+        "slug": "fleur-du-maquis",
+        "description": "Brebis à croûte fleurie roulée dans le romarin, la sarriette et les baies de genièvre.",
+        "format": "Pièce ~600 g",
+        "prix": "22,00 €"
+      },
+      {
+        "ref": "CF-206",
+        "nom": "Calinzanincu",
+        "slug": "calinzanincu",
+        "description": "Petit fromage de brebis et chèvre de Balagne, doux et lactique.",
+        "format": "Pièce ~350 g",
+        "prix": "13,00 €"
+      },
+      {
+        "ref": "CF-207",
+        "nom": "Tomme de chèvre du Cap",
+        "slug": "tomme-de-chevre-du-cap",
+        "description": "Chèvre pressée affinée 4 mois, finale saline.",
+        "format": "200 g",
+        "prix": "8,90 €"
+      },
+      {
+        "ref": "CF-208",
+        "nom": "Plateau des Cinque Frati",
+        "slug": "plateau-des-cinque-frati",
+        "description": "Cinq fromages, cinq vallées, avec confiture de figue et pain aux châtaignes. Pour 4 à 6.",
+        "format": "~800 g",
+        "prix": "49,00 €"
+      }
+    ]
+  },
+  {
+    "categorie": "Vins & spiritueux",
+    "nom_corse": "I vini",
+    "slug": "vins-spiritueux",
+    "produits": [
+      {
+        "ref": "CF-301",
+        "nom": "Patrimonio rouge « Cinque Frati »",
+        "slug": "patrimonio-rouge-cinque-frati",
+        "description": "Cuvée maison du Domaine di Funtanella. 100 % niellucciu, cerise noire, garrigue, tanins soyeux.",
+        "format": "75 cl",
+        "prix": "26,00 €"
+      },
+      {
+        "ref": "CF-302",
+        "nom": "Ajaccio rouge « Granitu »",
+        "slug": "ajaccio-rouge-granitu",
+        "description": "Sciaccarellu sur granite, Domaine Monte Rossu. Léger, poivré, très digeste.",
+        "format": "75 cl",
+        "prix": "29,00 €"
+      },
+      {
+        "ref": "CF-303",
+        "nom": "Patrimonio blanc « Petra Bianca »",
+        "slug": "patrimonio-blanc-petra-bianca",
+        "description": "Vermentinu sur argilo-calcaire. Amande, agrumes, salinité.",
+        "format": "75 cl",
+        "prix": "24,00 €"
+      },
+      {
+        "ref": "CF-304",
+        "nom": "Corse Calvi rosé « Alba »",
+        "slug": "corse-calvi-rose-alba",
+        "description": "Rosé pâle de Balagne, sciaccarellu et grenache. Pêche blanche, fraîcheur.",
+        "format": "75 cl",
+        "prix": "19,50 €"
+      },
+      {
+        "ref": "CF-305",
+        "nom": "Corse Sartène rouge « Vechju »",
+        "slug": "corse-sartene-rouge-vechju",
+        "description": "Grande cuvée élevée 18 mois, vieilles vignes. Rare : 1 200 bouteilles.",
+        "format": "75 cl",
+        "prix": "48,00 €"
+      },
+      {
+        "ref": "CF-306",
+        "nom": "Muscat du Cap Corse AOC",
+        "slug": "muscat-du-cap-corse-aoc",
+        "description": "Vin doux naturel, abricot sec, miel, fleur d'oranger.",
+        "format": "50 cl",
+        "prix": "27,00 €"
+      },
+      {
+        "ref": "CF-307",
+        "nom": "Vermentinu IGP Île de Beauté",
+        "slug": "vermentinu-igp-ile-de-beaute",
+        "description": "Blanc de soif, vif et floral. Le vin de l'apéritif.",
+        "format": "75 cl",
+        "prix": "14,90 €"
+      },
+      {
+        "ref": "CF-308",
+        "nom": "Apéritif au quinquina « U Capu »",
+        "slug": "aperitif-au-quinquina-u-capu",
+        "description": "Apéritif traditionnel à base de vin, quinquina et plantes du Cap.",
+        "format": "75 cl",
+        "prix": "24,00 €"
+      },
+      {
+        "ref": "CF-309",
+        "nom": "Liqueur de myrte",
+        "slug": "liqueur-de-myrte",
+        "description": "Macération de baies de myrte sauvage cueillies à la main. À servir glacée.",
+        "format": "50 cl",
+        "prix": "26,00 €"
+      },
+      {
+        "ref": "CF-310",
+        "nom": "Eau-de-vie de cédrat « Cedratina »",
+        "slug": "eau-de-vie-de-cedrat-cedratina",
+        "description": "Liqueur de cédrat corse, zestée et douce.",
+        "format": "50 cl",
+        "prix": "28,00 €"
+      },
+      {
+        "ref": "CF-311",
+        "nom": "Bière à la châtaigne",
+        "slug": "biere-a-la-chataigne",
+        "description": "Ambrée brassée avec de la farine de châtaigne AOP.",
+        "format": "33 cl",
+        "prix": "4,50 €"
+      },
+      {
+        "ref": "CF-312",
+        "nom": "Eau minérale de source corse",
+        "slug": "eau-minerale-de-source-corse",
+        "description": "Eau plate de montagne, servie au comptoir comme un cru (clin d'œil à l'interview).",
+        "format": "75 cl",
+        "prix": "3,90 €"
+      }
+    ]
+  },
+  {
+    "categorie": "Huiles, miels & épicerie",
+    "nom_corse": "A dispensa",
+    "slug": "huiles-miels-epicerie",
+    "produits": [
+      {
+        "ref": "CF-401",
+        "nom": "Huile d'olive AOP Oliu di Corsica",
+        "slug": "huile-d-olive-aop-oliu-di-corsica",
+        "description": "Olives tombées naturellement, variété sabina. Douce, notes d'amande et d'artichaut.",
+        "format": "50 cl",
+        "prix": "24,00 €"
+      },
+      {
+        "ref": "CF-402",
+        "nom": "Huile d'olive « Fruité vert »",
+        "slug": "huile-d-olive-fruite-vert",
+        "description": "Récolte précoce de ghjermana, ardente et herbacée.",
+        "format": "50 cl",
+        "prix": "26,50 €"
+      },
+      {
+        "ref": "CF-403",
+        "nom": "Huile d'olive à l'immortelle",
+        "slug": "huile-d-olive-a-l-immortelle",
+        "description": "Huile AOP infusée à l'immortelle du maquis. Pour poissons et légumes grillés.",
+        "format": "25 cl",
+        "prix": "17,00 €"
+      },
+      {
+        "ref": "CF-404",
+        "nom": "Miel AOP de châtaigneraie",
+        "slug": "miel-aop-de-chataigneraie",
+        "description": "Mele di Corsica, ambré et amer, puissant.",
+        "format": "250 g",
+        "prix": "13,50 €"
+      },
+      {
+        "ref": "CF-405",
+        "nom": "Miel AOP maquis de printemps",
+        "slug": "miel-aop-maquis-de-printemps",
+        "description": "Clair, floral, bruyère blanche et cistes.",
+        "format": "250 g",
+        "prix": "14,50 €"
+      },
+      {
+        "ref": "CF-406",
+        "nom": "Miel AOP miellat du maquis",
+        "slug": "miel-aop-miellat-du-maquis",
+        "description": "Sombre, malté, rare.",
+        "format": "250 g",
+        "prix": "16,00 €"
+      },
+      {
+        "ref": "CF-407",
+        "nom": "Farine de châtaigne AOP",
+        "slug": "farine-de-chataigne-aop",
+        "description": "Farina castagnina, séchée au feu de bois et moulue à la meule. Pour pulenda et fiadone.",
+        "format": "500 g",
+        "prix": "12,90 €"
+      },
+      {
+        "ref": "CF-408",
+        "nom": "Confiture de figue noire",
+        "slug": "confiture-de-figue-noire",
+        "description": "Figues de Corse et un trait de myrte. Avec les fromages de brebis.",
+        "format": "220 g",
+        "prix": "7,90 €"
+      },
+      {
+        "ref": "CF-409",
+        "nom": "Confiture de clémentine IGP",
+        "slug": "confiture-de-clementine-igp",
+        "description": "Clémentines de Corse entières, amertume douce.",
+        "format": "220 g",
+        "prix": "7,50 €"
+      },
+      {
+        "ref": "CF-410",
+        "nom": "Cédrat confit",
+        "slug": "cedrat-confit",
+        "description": "Écorces de cédrat confites, pâtisserie et apéritif.",
+        "format": "150 g",
+        "prix": "11,00 €"
+      },
+      {
+        "ref": "CF-411",
+        "nom": "Soupe corse",
+        "slug": "soupe-corse",
+        "description": "Soupe paysanne aux haricots, légumes et herbes, prête à réchauffer.",
+        "format": "Bocal 750 g",
+        "prix": "10,50 €"
+      },
+      {
+        "ref": "CF-412",
+        "nom": "Tapenade d'olives et nepita",
+        "slug": "tapenade-d-olives-et-nepita",
+        "description": "Olives noires et calament corse.",
+        "format": "100 g",
+        "prix": "6,90 €"
+      },
+      {
+        "ref": "CF-413",
+        "nom": "Pâtes à la farine de châtaigne",
+        "slug": "pates-a-la-farine-de-chataigne",
+        "description": "Tagliatelle artisanales, 20 % de farine de châtaigne.",
+        "format": "250 g",
+        "prix": "6,50 €"
+      }
+    ]
+  },
+  {
+    "categorie": "Épices & herbes du maquis",
+    "nom_corse": "E erbe",
+    "slug": "epices-herbes-du-maquis",
+    "produits": [
+      {
+        "ref": "CF-501",
+        "nom": "Herbes du maquis",
+        "slug": "herbes-du-maquis",
+        "description": "Mélange cueilli à la main : romarin, sarriette, thym, myrte, nepita.",
+        "format": "Pot 30 g",
+        "prix": "6,50 €"
+      },
+      {
+        "ref": "CF-502",
+        "nom": "Nepita séchée",
+        "slug": "nepita-sechee",
+        "description": "Calament corse, menthe sauvage poivrée. Indispensable à l'omelette au brocciu.",
+        "format": "Pot 20 g",
+        "prix": "6,90 €"
+      },
+      {
+        "ref": "CF-503",
+        "nom": "Fleur de sel à l'immortelle",
+        "slug": "fleur-de-sel-a-l-immortelle",
+        "description": "Fleur de sel et immortelle du maquis, notes de curry doux.",
+        "format": "Pot 100 g",
+        "prix": "8,50 €"
+      },
+      {
+        "ref": "CF-504",
+        "nom": "Baies de myrte",
+        "slug": "baies-de-myrte",
+        "description": "Pour les gibiers, les marinades et la cuisine du sanglier.",
+        "format": "Pot 30 g",
+        "prix": "7,50 €"
+      },
+      {
+        "ref": "CF-505",
+        "nom": "Piment doux d'Aléria",
+        "slug": "piment-doux-d-aleria",
+        "description": "Piment doux fumé au bois de châtaignier.",
+        "format": "Pot 40 g",
+        "prix": "7,90 €"
+      },
+      {
+        "ref": "CF-506",
+        "nom": "Poivre du lonzu",
+        "slug": "poivre-du-lonzu",
+        "description": "Mélange de poivres et piment utilisé par nos charcutiers, pour les viandes.",
+        "format": "Pot 50 g",
+        "prix": "8,90 €"
+      },
+      {
+        "ref": "CF-507",
+        "nom": "Tisane du berger",
+        "slug": "tisane-du-berger",
+        "description": "Immortelle, nepita, verveine, cistes.",
+        "format": "Sachet 40 g",
+        "prix": "8,00 €"
+      },
+      {
+        "ref": "CF-508",
+        "nom": "Coffret des cinq herbes",
+        "slug": "coffret-des-cinq-herbes",
+        "description": "Cinq pots (CF-501 à 505) dans un coffret bois gravé.",
+        "format": "Coffret",
+        "prix": "34,00 €"
+      }
+    ]
+  },
+  {
+    "categorie": "Douceurs",
+    "nom_corse": "E cose dolce",
+    "slug": "douceurs",
+    "produits": [
+      {
+        "ref": "CF-601",
+        "nom": "Canistrelli au vin blanc",
+        "slug": "canistrelli-au-vin-blanc",
+        "description": "Biscuits secs croquants à l'huile d'olive et au vin blanc.",
+        "format": "350 g",
+        "prix": "8,50 €"
+      },
+      {
+        "ref": "CF-602",
+        "nom": "Canistrelli citron & anis",
+        "slug": "canistrelli-citron-anis",
+        "description": "La version la plus parfumée, pour le café.",
+        "format": "350 g",
+        "prix": "8,50 €"
+      },
+      {
+        "ref": "CF-603",
+        "nom": "Canistrelli à la châtaigne",
+        "slug": "canistrelli-a-la-chataigne",
+        "description": "Avec farine de châtaigne AOP.",
+        "format": "350 g",
+        "prix": "9,50 €"
+      },
+      {
+        "ref": "CF-604",
+        "nom": "Fiadone",
+        "slug": "fiadone",
+        "description": "Gâteau au brocciu et au zeste de citron, fait chaque matin.",
+        "format": "Part / Entier 6 p.",
+        "prix": "4,50 € / 24,00 €"
+      },
+      {
+        "ref": "CF-605",
+        "nom": "Nougat au miel du maquis",
+        "slug": "nougat-au-miel-du-maquis",
+        "description": "Nougat tendre aux amandes et miel AOP.",
+        "format": "200 g",
+        "prix": "12,00 €"
+      },
+      {
+        "ref": "CF-606",
+        "nom": "Marrons glacés corses",
+        "slug": "marrons-glaces-corses",
+        "description": "Châtaignes confites une à une, saison d'hiver.",
+        "format": "6 pièces",
+        "prix": "19,00 €"
+      },
+      {
+        "ref": "CF-607",
+        "nom": "Clémentines confites",
+        "slug": "clementines-confites",
+        "description": "Clémentines de Corse entières, enrobées de chocolat noir.",
+        "format": "150 g",
+        "prix": "14,00 €"
+      }
+    ]
+  },
+  {
+    "categorie": "Box & coffrets",
+    "nom_corse": "E scatule",
+    "slug": "box-coffrets",
+    "produits": [
+      {
+        "ref": "CF-701",
+        "nom": "Coffret Apéru",
+        "slug": "coffret-aperu",
+        "description": "Coppa AOP 100 g, canistrelli vin blanc, tapenade nepita, Vermentinu IGP",
+        "prix": "49,00 €"
+      },
+      {
+        "ref": "CF-702",
+        "nom": "Coffret Calasima",
+        "slug": "coffret-calasima",
+        "description": "Trilogie AOP, tomme du Niolu, confiture de figue, Patrimonio rouge « Cinque Frati »",
+        "prix": "89,00 €"
+      },
+      {
+        "ref": "CF-703",
+        "nom": "Coffret Cinque Frati (prestige)",
+        "slug": "coffret-cinque-frati-prestige",
+        "description": "Prisuttu 30 mois, lonzu, fleur du maquis, miel miellat, huile AOP, Sartène « Vechju », liqueur de myrte, dans une caisse en châtaignier gravée",
+        "prix": "189,00 €"
+      },
+      {
+        "ref": "CF-704",
+        "nom": "Coffret Prima Neve (Noël, édition limitée)",
+        "slug": "coffret-prima-neve-noel-edition-limitee",
+        "description": "Marrons glacés, nougat, miel de châtaigneraie, Muscat du Cap Corse, canistrelli châtaigne",
+        "prix": "79,00 €"
+      },
+      {
+        "ref": "CF-705",
+        "nom": "Coffret Dolce",
+        "slug": "coffret-dolce",
+        "description": "Canistrelli x2, nougat, clémentines confites, tisane du berger",
+        "prix": "45,00 €"
+      },
+      {
+        "ref": "CF-706",
+        "nom": "Box mensuelle « A Scatula » (abonnement)",
+        "slug": "box-mensuelle-a-scatula-abonnement",
+        "description": "5 à 7 produits de saison choisis par Baptiste + une fiche producteur + une recette. Sans engagement.",
+        "prix": "39,00 €/mois"
+      },
+      {
+        "ref": "CF-707",
+        "nom": "Box « A Scatula » Grand Cru",
+        "slug": "box-a-scatula-grand-cru",
+        "description": "La box + une bouteille de vin rare",
+        "prix": "59,00 €/mois"
+      }
+    ]
+  },
+  {
+    "categorie": "Carte du comptoir",
+    "nom_corse": "U bancone",
+    "slug": "carte-du-comptoir",
+    "produits": [
+      {
+        "ref": "CF-801",
+        "nom": "Planche Fratellu",
+        "slug": "planche-fratellu",
+        "description": "Coppa, lonzu, tomme du Niolu, confiture de figue, pain",
+        "prix": "14,00 € (1 pers.)"
+      },
+      {
+        "ref": "CF-802",
+        "nom": "Planche des Cinque Frati",
+        "slug": "planche-des-cinque-frati",
+        "description": "Trois charcuteries AOP, trois fromages, salamu, canistrelli salés",
+        "prix": "24,00 € (2 pers.)"
+      },
+      {
+        "ref": "CF-803",
+        "nom": "Dégustation 3 vins corses",
+        "slug": "degustation-3-vins-corses",
+        "description": "Trois verres de 6 cl commentés (blanc, rosé, rouge)",
+        "prix": "15,00 €"
+      },
+      {
+        "ref": "CF-804",
+        "nom": "Dégustation 3 huiles AOP",
+        "slug": "degustation-3-huiles-aop",
+        "description": "Huiles comparées sur pain, avec le caviste",
+        "prix": "9,00 €"
+      },
+      {
+        "ref": "CF-805",
+        "nom": "Verre de vin",
+        "slug": "verre-de-vin",
+        "description": "Sélection du moment",
+        "prix": "6 à 9 €"
+      },
+      {
+        "ref": "CF-806",
+        "nom": "Assiette figatellu grillé (déc.–mars)",
+        "slug": "assiette-figatellu-grille-dec-mars",
+        "description": "Figatellu, pulenda de châtaigne",
+        "prix": "13,00 €"
+      },
+      {
+        "ref": "CF-807",
+        "nom": "Fiadone & café",
+        "slug": "fiadone-cafe",
+        "description": "Une part de fiadone, café ou tisane du berger",
+        "prix": "7,00 €"
+      }
+    ]
+  },
+  {
+    "categorie": "Salon premium & ateliers",
+    "nom_corse": "A sala",
+    "slug": "salon-premium-ateliers",
+    "produits": [
+      {
+        "ref": "CF-901",
+        "nom": "Dégustation commentée « Les trois AOP »",
+        "slug": "degustation-commentee-les-trois-aop",
+        "description": "Prisuttu, coppa, lonzu : apprendre à les reconnaître, avec trois vins",
+        "format": "1 h",
+        "prix": "35,00 € / pers."
+      },
+      {
+        "ref": "CF-902",
+        "nom": "Dégustation « Vins de l'île »",
+        "slug": "degustation-vins-de-l-ile",
+        "description": "Six vins, six terroirs, avec le caviste",
+        "format": "1 h 30",
+        "prix": "45,00 € / pers."
+      },
+      {
+        "ref": "CF-903",
+        "nom": "Atelier fiadone & canistrelli",
+        "slug": "atelier-fiadone-canistrelli",
+        "description": "On pâtisse, on goûte, on repart avec sa recette et ses biscuits",
+        "format": "2 h",
+        "prix": "55,00 € / pers."
+      },
+      {
+        "ref": "CF-904",
+        "nom": "Atelier accords fromages & miels",
+        "slug": "atelier-accords-fromages-miels",
+        "description": "Cinq brebis, cinq miels AOP",
+        "format": "1 h 30",
+        "prix": "42,00 € / pers."
+      },
+      {
+        "ref": "CF-905",
+        "nom": "Soirée producteur (mensuelle)",
+        "slug": "soiree-producteur-mensuelle",
+        "description": "Un producteur vient de Corse présenter son travail, en petit comité, dîner de produits",
+        "format": "2 h 30",
+        "prix": "75,00 € / pers."
+      },
+      {
+        "ref": "CF-906",
+        "nom": "Voyage immersif",
+        "slug": "voyage-immersif",
+        "description": "Expérience en réalité virtuelle (de Calasima au Monte Cinto) suivie d'une planche des Cinque Frati et d'un verre",
+        "format": "45 min",
+        "prix": "29,00 € / pers."
+      },
+      {
+        "ref": "CF-907",
+        "nom": "Privatisation du salon",
+        "slug": "privatisation-du-salon",
+        "description": "Anniversaire, famille, séminaire : formule sur mesure, à partir de 12 personnes",
+        "format": "3 h",
+        "prix": "dès 65,00 € / pers."
+      },
+      {
+        "ref": "CF-908",
+        "nom": "Carte cadeau",
+        "slug": "carte-cadeau",
+        "description": "Valable sur la boutique, le comptoir et les ateliers",
+        "format": "—",
+        "prix": "30 / 50 / 100 €"
+      }
+    ]
+  }
+]
